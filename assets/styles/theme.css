@@ -1,0 +1,316 @@
+:root {
+    scroll-behavior: smooth;
+    --background: #0f0f15;
+    --primary: #ff4ab0;
+    --secondary: #FFCC70;
+    --tertiary: #5CC8FF; /* #4158D0 */
+    --success: #40F99B;
+    --warn: #EF233C;
+    --secondary-text: #8e92aa;
+    --container: #ffffff0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Hind', sans-serif;
+    font-size: 1em;
+}
+
+h1, h2, p, span, i {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    width: 100%;
+    /* height: 100%; */
+}
+
+body {
+    background-color: var(--background);
+    position: relative;
+    z-index: 1;
+    padding: 2vmax;
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 2em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(142, 146, 170, 0.3);
+    border-radius: 2em;
+}
+
+/* lights */
+#lights {
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(10em)
+}
+
+.pink {
+    width: 60em;
+    height: 40em;
+    background: radial-gradient(closest-side, rgba(255, 142, 212, 0.4) 0%, transparent 100%);
+    position: fixed;
+    top: -20em;
+    right: 5em;
+}
+
+.blue {
+    width: 60em;
+    height: 40em;
+    background: radial-gradient(closest-side, rgba(142, 153, 255, 0.4) 0%, transparent 100%);
+    position: fixed;
+    top: -20em;
+    right: 50em;
+}
+
+.second-blue {
+    width: 10em;
+    height: 10em;
+    background: radial-gradient(closest-side, rgba(142, 153, 255, 1) 100%, transparent);
+    position: fixed;
+    bottom: 10em;
+    left: 10em;
+}
+
+.green {
+    width: 30em;
+    height: 30em;
+    background: radial-gradient(closest-side, rgba(142, 255, 217, 0.7) 0%, transparent 100%);
+    position: fixed;
+    bottom: -5em;
+    right: 30em;
+}
+
+.yellow {
+    width: 65em;
+    height: 50em;
+    background: radial-gradient(closest-side, rgba(244, 255, 142, 0.4) 0%, transparent 100%);
+    position: fixed;
+    bottom: -25em;
+    right: -25em;
+}
+
+.form-input {
+    background-color: var(--container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    border-radius: 5em;
+}
+
+.form-input input {
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.6em;
+}
+
+.form-input input::placeholder {
+    color: var(--secondary-text);
+}
+
+.logo {
+    color: var(--primary);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-input i {
+    padding: 0.6em 1em;
+}
+
+.button {
+    background-color: var(--primary);
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    color: var(--background);
+    gap: 0.5em;
+}
+
+.button:hover {
+    background-color: rgb(255, 26, 156);
+}
+
+.button i {
+    font-size: 1.2em;
+    color: var(--background);
+}
+
+/* aside */
+
+aside section {
+    border-radius: 1.5em;
+    background-color: var(--container);
+    backdrop-filter: blur(1em);
+}
+
+aside #first i {
+    font-size: 1.5em;
+    background-color: var(--primary);
+    border-radius: 50%;
+    padding: 0.7vmax;
+}
+
+aside #second > div:first-child p, aside #second > div:first-child i {
+    color: var(--primary);
+}
+
+aside button {
+    width: 3em;
+    height: 4em;
+}
+
+aside li {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 1em;
+    padding: 0.8em 2em;
+    font-weight: 600;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+aside li i {
+    font-size: 1.3em;
+    color: var(--primary);
+}
+
+aside li:hover {
+    background-color: var(--primary);
+}
+
+aside li:hover > * {
+    color: var(--background);
+}
+
+.movie {
+    width: 14.5vmax;
+    height: 24vmax;
+    border-radius: 1.5em;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    padding: 0.8vmax;
+    gap: 0.5em;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.movie:hover {
+    transform: scale(1.07) rotate(-1.3deg);
+    filter: drop-shadow(0px 0px 1em rgb(255, 255, 255, 0.1));
+}
+
+.movie img {
+    flex: 1;
+    width: 100%;
+    max-height: 18vmax;
+    border-radius: 1.5em;
+    object-fit: cover;
+}
+
+.movie section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+
+.movie p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.movie .subtitle {
+    color: var(--secondary-text);
+}
+
+.movie .subtitle span {
+    color: var(--primary);
+}
+
+.movie .subtitle .friendly {
+    color: var(--success);
+}
+
+.movie .subtitle .teen {
+    color: var(--secondary);
+}
+
+.movie .subtitle .adult {
+    color: var(--warn);
+}
+
+.movie .rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 0.3vmax;
+}
+
+.movie .rating i {
+    color: var(--secondary);
+}
+
+/* .movie p:nth-child(2) {
+    color: var(--secondary-text);
+}
+
+.movie p:last-child {
+    color: var(--secondary-text);
+    margin-top: 0.4em;
+} */
+
+/* footer */
+
+footer ul li {
+    font-weight: 500;
+}
+
+footer a {
+    text-decoration: none;
+    line-height: normal;
+    height: auto;
+}
