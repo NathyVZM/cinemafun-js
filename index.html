@@ -32,88 +32,53 @@
         <div class="yellow"></div>
     </div>
 
+    <dialog id="dialog">
+        <header>
+            <section>
+                <i class="ph-duotone ph-film-slate"></i>
+                <h1 class="logo">CINEMAFUN</h1>
+            </section>
+            <section>
+                <h2 id="dialog-title">Bienvenid@!</h2>
+                <h3 id="dialog-subtitle">Introduce tu nombre y el monto del boleto para continuar</h3>
+            </section>
+        </header>
 
-    <!-- Header -->
-    <header>
-        <div>
-            <i class="ph-duotone ph-film-slate"></i>
-            <h1 class="logo">CINEMAFUN</h1>
-        </div>
-        <div class="form-input">
-            <i class="ph-duotone ph-magnifying-glass"></i>
-            <input type="search" name="search" id="search" placeholder="Buscar peliculas...">
-        </div>
-    </header>
-
-    <!-- Sidebar -->
-    <aside>
-        <section class="info-panel">
-            <div id="first">
-                <i class="ph-duotone ph-user"></i>
-                <p>Nathalie Zambrano</p>
-            </div>
-            <div id="second">
-                <div>
-                    <p>Monto del boleto</p>
-                    <p>
-                        <i class="ph-duotone ph-ticket"></i>
-                        USD$ 4.45
-                    </p>
+        <form>
+            <section>
+                <label for="name">Nombre completo</label>
+                <div class="form-input">
+                    <i class="ph-duotone ph-user"></i>
+                    <input type="text" name="name" id="name" placeholder="Jane Doe" >
                 </div>
-                <div>
-                    <button type="button" class="button"><i class="ph-duotone ph-pencil-simple"></i></button>
+            </section>
+
+            <section>
+                <label for="email">Correo electronico</label>
+                <div class="form-input">
+                    <i class="ph-duotone ph-envelope-simple"></i>
+                    <input type="email" name="email" id="email" placeholder="janedoe@gmail.com" >
                 </div>
-            </div>
-        </section>
-        <ul>
-            <li>
-                <i class="ph-duotone ph-house"></i>
-                <span>Inicio</span>
-            </li>
-            <li>
-                <i class="ph-duotone ph-film-reel"></i>
-                <span>Peliculas</span>
-            </li>
-            <li>
-                <i class="ph-duotone ph-popcorn"></i>
-                <span>Proximos estrenos</span>
-            </li>
-            <li>
-                <i class="ph-duotone ph-users"></i>
-                <span>Sobre nosotros</span>
-            </li>
-        </ul>
-    </aside>
+            </section>
 
-    <!-- Main -->
-    <main></main>
+            <section>
+                <label for="ticket">Monto del boleto</label>
+                <div class="form-input">
+                    <i class="ph-duotone ph-currency-dollar"></i>
+                    <input type="number" name="ticket" id="ticket" placeholder="4.45">
+                </div>
+            </section>
+        </form>
 
-    <!-- Footer -->
-    <footer>
-        <section>
-            <i class="ph-duotone ph-film-slate"></i>
-            <h2 class="logo">CINEMAFUN</h2>
-        </section>
-        <section>
-            <a href="https://github.com/NathyVZM" target="_blank">
-                <i class="ph-duotone ph-github-logo"></i>
-            </a>
-            <a href="https://www.instagram.com/nathievzm/" target="_blank">
-                <i class="ph-duotone ph-instagram-logo"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nathalie-zambrano-571997230/" target="_blank">
-                <i class="ph-duotone ph-linkedin-logo"></i>
-            </a>
-        </section>
-        <section>
-            <small>&copy; Copyright 2023. CINEMAFUN - Nathalie Zambrano</small>
-            <small>Todos los derechos reservados</small>
-        </section>
-    </footer>
+        <footer>
+            <button type="button" class="button" id="dialog-cancel" onclick="closeDialog()">Cancelar</button>
+            <button type="button" class="button" id="dialog-button">Ingresar</button>
+        </footer>
+    </dialog>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="/assets/scripts/index.js" type="module"></script>
+    <script src="assets/scripts/index.js" type="module"></script>
 </body>
 
 </html>

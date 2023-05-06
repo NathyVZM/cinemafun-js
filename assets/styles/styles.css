@@ -1,6 +1,6 @@
 /* Header */
 
-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,11 +14,11 @@ header {
     z-index: 10;
 }
 
-header div:last-child {
+#header div:last-child {
     flex: 1;
 }
 
-header div {
+#header div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -26,12 +26,12 @@ header div {
     gap: 0.5em;
 }
 
-header div:first-child i {
+#header div:first-child i {
     font-size: 1.5em;
     color: var(--primary);
 }
 
-header h1 {
+#header h1 {
     font-size: 1.5em;
     margin: 0;
 }
@@ -43,7 +43,7 @@ aside {
     justify-content: flex-start;
     align-items: stretch;
     flex-flow: column;
-    width: 13.5%;
+    width: 14%;
     float: left;
     position: sticky;
     top: 8em;
@@ -55,16 +55,25 @@ aside section {
     justify-content: center;
     align-items: stretch;
     flex-flow: column wrap;
-    padding: 1vmax;
-    gap: 0.3vmax;
+    padding: 1.2vmax;
+    gap: 0.7vmax;
 }
 
 aside #first {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    gap: 0.8vmax;
+    flex-flow: row;
+    gap: 0.7vmax;
+}
+
+aside #first div p:last-child {
+    font-size: 0.8em;
+    color: var(--secondary-text);
+    width: 11.1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 aside #second {
@@ -92,12 +101,13 @@ aside #second > div:first-child p:last-child {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    gap: 0.5em;
+    /* gap: 0.5em; */
     font-size: 1.1em;
 }
 
 aside #second > div:first-child i {
     font-size: 1.5rem;
+    margin-right: 0.5em;
 }
 
 aside ul {
@@ -114,7 +124,7 @@ aside ul {
 
 /* main */
 
-main {
+#main {
     width: 84%;
     float: right;
     display: flex;
@@ -124,11 +134,11 @@ main {
     gap: 2vmax;
 }
 
-main > section {
+#main > section {
     width: 100%;
 }
 
-main > section:last-child {
+#main > section:last-child {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -209,7 +219,7 @@ main > section:last-child {
 
 /* footer */
 
-footer {
+#footer {
     clear: both;
     display: flex;
     justify-content: space-between;
@@ -219,19 +229,19 @@ footer {
     padding-top: 5vmax;
 }
 
-footer section {
+#footer section {
     flex: 1;
     width: 100%;
 }
 
-footer section {
+#footer section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
-footer section:first-child {
+#footer section:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,32 +249,32 @@ footer section:first-child {
     gap: 0.5em;
 }
 
-footer section:first-child i {
+#footer section:first-child i {
     color: var(--primary);
     font-size: 1.8em;
 }
 
-footer section:first-child h2 {
+#footer section:first-child h2 {
     font-size: 1.3em;
     margin: 0;
 }
 
-footer section:nth-child(2) {
+#footer section:nth-child(2) {
     gap: 2vmax;
 }
 
-footer section:nth-child(2) i {
+#footer section:nth-child(2) i {
     font-size: 1.5em;
     color: var(--secondary-text);
 }
 
-footer section:last-child {
+#footer section:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
 }
 
-footer section:last-child small {
+#footer section:last-child small {
     color: var(--secondary-text);
 }
