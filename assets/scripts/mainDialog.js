@@ -3,12 +3,10 @@ import { renderHeader, renderSidebar, renderCarousel, renderMoviesPreviews, rend
 export const showDialog = (edit=true) => {
     let title = ''
     let subtitle = ''
-    let button = ''
 
     if (edit) {
         title = 'Editar datos'
         subtitle = 'Actualiza o corrige tu informacion'
-        button = 'Editar'
 
         const user = JSON.parse(sessionStorage.getItem('user'))
         const inputs = document.querySelectorAll('#dialog > form input')
@@ -16,12 +14,10 @@ export const showDialog = (edit=true) => {
     } else {
         title = 'Bienvenid@!'
         subtitle = 'Introduce tu nombre y el monto del boleto para continuar'
-        button = 'Ingresar'
     }
 
     document.querySelector('#dialog-title').textContent = title
     document.querySelector('#dialog-subtitle').textContent = subtitle
-    document.querySelector('#dialog-button').textContent = button
 
     const dialog = document.querySelector('#dialog')
     dialog.setAttribute('edit', edit)
@@ -48,11 +44,10 @@ export const saveUser = () => {
 
     sessionStorage.setItem('user', JSON.stringify(user))
     closeDialog()
-    const dialog = document.querySelector('dialog')
 
     setTimeout(() => {
+        const dialog = document.querySelector('dialog')
         dialog.setAttribute('edit', true)
-        document.querySelector('#dialog-button').addEventListener('click', updateUser)
 
         renderHeader()
         renderSidebar()

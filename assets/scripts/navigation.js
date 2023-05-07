@@ -45,7 +45,7 @@ export const goToHome = () => {
         <section>
             ${previews.map(movie => {
                 return `
-                    <figure class="movie">
+                    <figure class="movie" onclick="renderMovieDetails(${movie.id})">
                         <img src="${movie.cover}" alt="${movie.title}">
                         <section>
                             <p>${movie.title}</p>

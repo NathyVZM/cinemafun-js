@@ -441,9 +441,13 @@ aside ul {
     margin-top: 1vmax;
 }
 
-.movie-schedule .button {
+.movie-schedule .button{
     width: 20em;
     height: 3em;
+}
+
+.movie-schedule .button[selected="true"] {
+    background-color: #ff1a9c;
 }
 
 .movie-schedule .button span {
@@ -454,6 +458,20 @@ aside ul {
     gap: 0.5vmax;
 }
 
+#continue-purchase {
+    margin-top: 1vmax;
+    align-items: flex-end !important;
+}
+
+#continue-purchase .button {
+    width: 15em;
+    height: 3em;
+}
+
+#continue-purchase .button i {
+    font-size: 1.3em;
+}
+
 #purchase-tickets td, #purchase-tickets th {
     padding: 1vmax;
     border-bottom: 1px solid var(--secondary-text);
@@ -461,6 +479,14 @@ aside ul {
 
 #purchase-tickets tr th:first-child, #purchase-tickets tr td:first-child {
     padding-left: 0;
+}
+
+#schedule[selected-day="false"] {
+    display: none;
+}
+
+#purchase-tickets[selected-hour="false"], #continue-purchase[selected-hour="false"] {
+    display: none;
 }
 
 /* footer */

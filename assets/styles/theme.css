@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button:hover {
-    background-color: rgb(255, 26, 156);
+    background-color: #ff1a9c;
 }
 
 .button i {
@@ -471,10 +471,18 @@ dialog > footer > .button {
     height: 3em;
 }
 
-dialog[edit="false"] #dialog-cancel {
+dialog[edit="false"] #dialog-cancel, dialog[edit="false"] #dialog-edit {
     display: none;
 }
 
-dialog[edit="true"] #dialog-cancel {
+dialog[edit="true"] #dialog-cancel, dialog[edit="true"] #dialog-edit {
     display: block;
+}
+
+dialog[edit="false"] #dialog-access {
+    display: block;
+}
+
+dialog[edit="true"] #dialog-access {
+    display: none;
 }

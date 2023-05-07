@@ -66,38 +66,37 @@ export const renderMovieDetails = (movieId) =>  {
                     <div id="available-days">
                         <h3>Funciones disponibles</h3>
                         <ul class="movie-schedule">
-                            <li><button type="button" class="button">Mayo 5</button></li>
-                            <li><button type="button" class="button">Mayo 6</button></li>
-                            <li><button type="button" class="button">Mayo 7</button></li>
+                            <li><button type="button" class="button" onclick="selectDay('Mayo 5')" data="Mayo 5">Mayo 5</button></li>
+                            <li><button type="button" class="button" onclick="selectDay('Mayo 6')" data="Mayo 6">Mayo 6</button></li>
+                            <li><button type="button" class="button" onclick="selectDay('Mayo 7')" data="Mayo 7">Mayo 7</button></li>
                         </ul>
                     </div>
-                    <div id="schedule">
+                    <div id="schedule" selected-day="false">
                         <h3>Horarios disponibles</h3>
                         <ul class="movie-schedule">
                             <li>
-                                <button type="button" class="button">
+                                <button type="button" class="button" onclick="selectHour('8:00 PM', 'Sala 1')" data="8:00 PM-Sala 1">
                                     <span>8:00 PM</span>-<span>Sala 1</span>
                                 </button>
                             </li>
                             <li>
-                                <button type="button" class="button">
+                                <button type="button" class="button" onclick="selectHour('7:00 PM', 'Sala 2')" data="7:00 PM-Sala 2">
                                     <span>7:00 PM</span>-<span>Sala 2</span>
                                 </button>
                             </li>
                             <li>
-                                <button type="button" class="button">
+                                <button type="button" class="button" onclick="selectHour('9:00 PM', 'Sala 3')" data="9:00 PM-Sala 3">
                                     <span>9:00 PM</span>-<span>Sala 3</span>
                                 </button>
                             </li>
                         </ul>
                     </div>
-                    <div id="purchase-tickets">
+                    <div id="purchase-tickets" selected-hour="false">
                         <h3>Compra de tickets</h3>
                         <table>
                             <tr>
                                 <th>Precio unitario</th>
                                 <th>Cantidad</th>
-                                <th>IVA</th>
                                 <th>Total</th>
                             </tr>
                             <tr>
@@ -105,19 +104,26 @@ export const renderMovieDetails = (movieId) =>  {
                                 <td>
                                     <div class="quantity">
                                         <button type="button" class="button" onclick="decrease()">-</button>
-                                        <input type="number" readonly min="1" value="1">
+                                        <input type="number" readonly min="1" value="1" oninput="saveAmount()">
                                         <button type="button" class="button" onclick="increase()">+</button>
                                     </div>
                                 </td>
-                                <td id="iva">USD$ ${calculateIVA()}</td>
                                 <td id="total">USD$ ${calculateTotal()}</td>
                             </tr>
                         </table>
+                    </div>
+                    <div id="continue-purchase" selected-hour="false">
+                        <button type="button" class="button" onclick="continuePurchase()">
+                            Continuar
+                            <i class="ph-duotone ph-caret-right"></i>
+                        </button>
                     </div>
                 </main>
             </div>
         </section>
     `
+
+    window.scrollTo(0, 0)
 }
 
 export const increaseTicketQuantity = () => {
@@ -125,9 +131,7 @@ export const increaseTicketQuantity = () => {
     const value =  Number(input.value) + 1
     input.value = value
 
-    const iva = calculateIVA()
     const total = calculateTotal()
-    document.querySelector('#purchase-tickets #iva').textContent = `USD$ ${iva}`
     document.querySelector('#purchase-tickets #total').textContent = `USD$ ${total}`
 }
 
@@ -137,22 +141,46 @@ export const decreaseTicketQuantity = () => {
     value === 1 ? value = 1 : value -= 1
     input.value = value
 
-    const iva = calculateIVA()
     const total = calculateTotal()
-    document.querySelector('#purchase-tickets #iva').textContent = `USD$ ${iva}`
     document.querySelector('#purchase-tickets #total').textContent = `USD$ ${total}`
-}
-
-export const calculateIVA = () => {
-    const { ticket } = JSON.parse(sessionStorage.getItem('user'))
-    const input = document.querySelector('.quantity input')
-    const value = input ? Number(input.value) : 1
-    return Math.round(((ticket * value * 0.16) + Number.EPSILON) * 100) / 100
 }
 
 export const calculateTotal = () => {
     const { ticket } = JSON.parse(sessionStorage.getItem('user'))
     const input = document.querySelector('.quantity input')
     const value = input ? Number(input.value) : 1
-    return Math.round(((ticket * value * 1.16) + Number.EPSILON) * 100) / 100
+    return Math.round(((ticket * value) + Number.EPSILON) * 100) / 100
+}
+
+export const selectDay = day => {
+    const buttons = document.querySelectorAll('#available-days .button')
+    buttons.forEach(button => button.setAttribute('selected', false))
+
+    document.querySelector(`#available-days .button[data="${day}"]`).setAttribute('selected', true)
+    document.querySelector('#movie-second #schedule').setAttribute('selected-day', true)
+}
+
+export const selectHour = (hour, room) => {
+    const buttons = document.querySelectorAll('#schedule .button')
+    buttons.forEach(button => button.setAttribute('selected', false))
+
+    document.querySelector(`#schedule .button[data="${hour}-${room}"]`).setAttribute('selected', true)
+    document.querySelector('#movie-second #purchase-tickets').setAttribute('selected-hour', true)
+    document.querySelector('#movie-second #continue-purchase').setAttribute('selected-hour', true)
+}
+
+export const continuePurchase = () => {
+    const buttons = document.querySelectorAll('#movie-second .button[selected="true"]')
+    const ticketsQuantity = document.querySelector('.quantity input').value
+    const total = document.querySelector('#purchase-tickets #total').textContent
+
+    const movie = {
+        day: buttons[0].textContent,
+        hour: buttons[1].getAttribute('data').split('-')[0],
+        room: buttons[1].getAttribute('data').split('-')[1],
+        tickets: Number(ticketsQuantity),
+        total: Number(total.substring(5))
+    }
+
+    sessionStorage.setItem('movie', JSON.stringify(movie))
 }
