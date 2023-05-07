@@ -115,13 +115,11 @@ export const renderMoviesPreviews = () => {
     const main = document.querySelector('#main')
     const previews = movies.toSorted(() => Math.random() - 0.5).slice(0, 5)
 
-    console.log(previews)
-
     main.innerHTML += `
         <section>
             ${previews.map(movie => {
                 return `
-                    <figure class="movie" onclick="showMovieDetails(${movie.id})">
+                    <figure class="movie" onclick="renderMovieDetails(${movie.id})">
                         <img src="${movie.cover}" alt="${movie.title}">
                         <section>
                             <p>${movie.title}</p>

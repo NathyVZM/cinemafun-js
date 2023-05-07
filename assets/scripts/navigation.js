@@ -6,6 +6,7 @@ export const goToHome = () => {
     const previews = movies.toSorted(() => Math.random() - 0.5).slice(0, 5)
 
     const main = document.querySelector('#main')
+    main.removeAttribute('page', 'movie-details')
     main.innerHTML = `
         <section>
             <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -63,6 +64,7 @@ export const goToHome = () => {
 
 export const goToMovies = () => {
     const main = document.querySelector('#main')
+    main.removeAttribute('page', 'movie-details')
     main.innerHTML = `
         <section class="main-header">
             <i class="ph-duotone ph-film-reel"></i>
@@ -71,7 +73,7 @@ export const goToMovies = () => {
         <section>
             ${movies.map(movie => {
                 return `
-                    <figure class="movie" onclick="showMovieDetails(${movie.id})">
+                    <figure class="movie" onclick="renderMovieDetails(${movie.id})">
                         <img src="${movie.cover}" alt="${movie.title}">
                         <section>
                             <p>${movie.title}</p>
