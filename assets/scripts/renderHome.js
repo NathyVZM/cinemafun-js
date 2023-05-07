@@ -1,35 +1,5 @@
 import movies from '../../movies.json' assert { type: 'json' }
-
-const renderStars = rating => {
-    const fullStar = '<i class="ph-fill ph-star"></i>'
-    const halfStar = '<i class="ph-fill ph-star-half"></i>'
-    const emptyStar = '<i class="ph ph-star"></i>'
-    let result = ''
-
-    const ratingFiveScale = 5 * rating / 10
-    const numStars = Math.round(ratingFiveScale * 2) / 2
-
-    for (let index = 0; index < 5; index++) {
-        if (index < Math.floor(numStars)) result += fullStar
-        else if (index === Math.floor(numStars) && numStars % 1 !== 0) result += halfStar
-        else result += emptyStar
-    }
-
-    return result
-}
-
-const renderClasification = clasification => {
-    let color = ''
-
-    if (clasification === 'A' || clasification === 'PG' || clasification === '12') color = 'friendly'
-    else if (clasification === 'PG-13' || clasification === '16') color = 'teen'
-    else color = 'adult'
-
-    return color
-}
-
-
-// Render home page
+import { renderStars, renderClasification } from './miscellaneous.js'
 
 export const renderHeader = () => {
     const script = document.querySelector('body script')
@@ -76,7 +46,7 @@ export const renderSidebar = () => {
                 </div>
             </section>
             <ul>
-                <li>
+                <li onclick="goToHome()">
                     <i class="ph-duotone ph-house"></i>
                     <span>Inicio</span>
                 </li>
@@ -145,11 +115,13 @@ export const renderMoviesPreviews = () => {
     const main = document.querySelector('#main')
     const previews = movies.toSorted(() => Math.random() - 0.5).slice(0, 5)
 
+    console.log(previews)
+
     main.innerHTML += `
         <section>
             ${previews.map(movie => {
                 return `
-                    <figure class="movie">
+                    <figure class="movie" onclick="showMovieDetails(${movie.id})">
                         <img src="${movie.cover}" alt="${movie.title}">
                         <section>
                             <p>${movie.title}</p>
