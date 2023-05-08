@@ -1,4 +1,5 @@
 import { renderHeader, renderSidebar, renderCarousel, renderMoviesPreviews, renderFooter } from "./renderHome.js"
+import { calculateTotal } from "./movieDetails.js"
 
 export const showDialog = (edit=true) => {
     let title = ''
@@ -77,4 +78,11 @@ export const updateUser = () => {
     name.textContent = user.name
     email.textContent = user.email
     ticket.textContent = user.ticket
+
+    const ticketBase = document.querySelector('#purchase-tickets #ticket')
+    if (ticketBase) {
+        ticketBase.textContent = `USD$ ${user.ticket}`
+        const total = calculateTotal()
+        document.querySelector('#purchase-tickets #total').textContent = `USD$ ${total}`
+    }
 }

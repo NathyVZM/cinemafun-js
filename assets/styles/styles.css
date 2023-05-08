@@ -439,6 +439,7 @@ aside ul {
     align-items: center;
     flex-flow: row wrap;
     margin-top: 1vmax;
+    gap: 1vmax;
 }
 
 .movie-schedule .button{
