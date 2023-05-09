@@ -1,6 +1,7 @@
 import movies from '../../movies.json' assert { type: 'json' }
 import { renderClasification } from './miscellaneous.js'
 import { getMovieSchedule, getMovieDays, getMovieHours } from './generateSchedules.js'
+import { renderSeatsPage, renderSeats } from './seats.js'
 
 export const renderMovieDetails = (movieId) =>  {
     const movie = movies.find(m => m.id === movieId)
@@ -160,6 +161,7 @@ export const selectDay = day => {
         </ul>
     `
     schedules.setAttribute('selected-day', true)
+    window.scrollTo(0, 700)
 }
 
 export const selectHour = (hour, room) => {
@@ -169,6 +171,8 @@ export const selectHour = (hour, room) => {
     document.querySelector(`#schedule .button[data="${hour}-${room}"]`).setAttribute('selected', true)
     document.querySelector('#movie-second #purchase-tickets').setAttribute('selected-hour', true)
     document.querySelector('#movie-second #continue-purchase').setAttribute('selected-hour', true)
+
+    window.scrollTo(0, 1000)
 }
 
 export const continuePurchase = () => {
@@ -181,10 +185,12 @@ export const continuePurchase = () => {
         movieId: selectedMovie,
         day: buttons[0].textContent,
         hour: buttons[1].getAttribute('data').split('-')[0],
-        theater: buttons[1].getAttribute('data').split('-')[1],
+        theater: Number(buttons[1].getAttribute('data').split('-')[1].split(' ')[1]),
         tickets: Number(ticketsQuantity),
         total: Number(total.substring(5))
     }
 
     sessionStorage.setItem('movie', JSON.stringify(movie))
+    renderSeatsPage()
+    renderSeats()
 }

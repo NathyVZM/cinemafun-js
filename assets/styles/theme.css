@@ -131,6 +131,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5em;
 }
 
+.form-input:has(textarea) {
+    align-items: flex-start;
+    border-radius: 1.5em;
+}
+
 .form-input input {
     background-color: transparent;
     flex: 1;
@@ -140,7 +145,16 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0 5em 5em 0;
 }
 
-.form-input input::placeholder {
+.form-input textarea {
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.6em;
+    border-radius: 0 1.5em 1.5em 0;
+}
+
+.form-input input::placeholder, .form-input textarea::placeholder {
     color: var(--secondary-text);
 }
 
@@ -346,6 +360,12 @@ aside li:hover > * {
 .quantity input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.seat {
+    background-color: rgb(255, 74, 176, 0.5);
+    border-radius: 5em;
+    padding: 0.5em 1em;
 }
 
 /* footer */

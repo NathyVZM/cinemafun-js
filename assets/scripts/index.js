@@ -3,6 +3,8 @@ import { renderHeader, renderSidebar, renderCarousel, renderMoviesPreviews, rend
 import { goToHome, goToMovies } from "./navigation.js"
 import { renderMovieDetails, increaseTicketQuantity, decreaseTicketQuantity, selectDay, selectHour, continuePurchase } from "./movieDetails.js"
 import { generateSchedules } from "./generateSchedules.js"
+import { selectSeat, continueWithSeats } from "./seats.js"
+import { saveInvoice } from "./invoice-form.js"
 
 window.showDialog = showDialog
 window.closeDialog = closeDialog
@@ -16,6 +18,9 @@ window.decrease = decreaseTicketQuantity
 window.selectDay = selectDay
 window.selectHour = selectHour
 window.continuePurchase = continuePurchase
+window.selectSeat = selectSeat
+window.continueWithSeats = continueWithSeats
+window.saveInvoice = saveInvoice
 
 window.onload = () => {
     const user = JSON.parse(sessionStorage.getItem('user'))
