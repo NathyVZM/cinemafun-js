@@ -25,3 +25,10 @@ export const renderClasification = clasification => {
 
     return color
 }
+
+export const openMovieTrailer = trailer => {
+    console.log(trailer)
+    const iframe = document.querySelector('iframe')
+    iframe.src = trailer
+    iframe.setAttribute('watch', true)
+}

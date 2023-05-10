@@ -6,6 +6,7 @@ import { generateSchedules } from "./generateSchedules.js"
 import { selectSeat, continueWithSeats } from "./seats.js"
 import { saveInvoice } from "./invoice-form.js"
 import { printInvoice } from "./invoice.js"
+import { openMovieTrailer } from "./miscellaneous.js"
 
 window.showDialog = showDialog
 window.closeDialog = closeDialog
@@ -24,6 +25,7 @@ window.selectSeat = selectSeat
 window.continueWithSeats = continueWithSeats
 window.saveInvoice = saveInvoice
 window.printInvoice = printInvoice
+window.openMovieTrailer = openMovieTrailer
 
 window.onload = () => {
     const user = JSON.parse(sessionStorage.getItem('user'))

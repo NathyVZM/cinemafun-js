@@ -294,10 +294,6 @@ aside li:hover > * {
     color: var(--secondary-text);
 }
 
-/* .movie .subtitle span {
-    color: var(--primary);
-} */
-
 .friendly {
     color: var(--success);
 }

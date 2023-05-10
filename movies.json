@@ -10,6 +10,7 @@
         "plot": "Un fontanero llamado Mario viaja a través de un laberinto subterráneo con su hermano, Luigi, tratando de salvar a una princesa capturada.",
         "cover": "https://m.media-amazon.com/images/M/MV5BNGZhYWIyZWUtOTdjZS00ZTc1LWFlZDMtNzU5MTE0OTcyMjg1XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1080_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BMDE4MjgyMDQtNDA2Yi00MGEyLWFjNmItZDA5OGVjN2EwMzBjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1920_.jpg",
+        "trailer": "https://www.youtube.com/embed/PFxMB9SeEfc",
         "cast": [
             {
                 "name": "Chris Pratt",
@@ -40,6 +41,21 @@
                 "name": "Seth Rogen",
                 "role": "Donkey Kong",
                 "photo": "https://m.media-amazon.com/images/M/MV5BMTQ0NjgzNzcwNV5BMl5BanBnXkFtZTcwODExMDYxOQ@@._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Fred Armisen",
+                "role": "Cranky Kong",
+                "photo": "https://m.media-amazon.com/images/M/MV5BODA3NmUyMWUtYTgxMy00ZDhjLTkwYzgtNTI1NjE4NzFkMDBmXkEyXkFqcGdeQXVyMTMzOTMyOTM4._V1_FMjpg_UX772_.jpg"
+            },
+            {
+                "name": "Sebastian Maniscalco",
+                "role": "Spike",
+                "photo": "https://m.media-amazon.com/images/M/MV5BOTA0OWM4NWUtMTRiOC00MzM3LTk3NzktMjQyNjIyOGI4ZjUyXkEyXkFqcGdeQXVyMTI5OTE4MzM@._V1_FMjpg_UY7146_.jpg"
+            },
+            {
+                "name": "Kevin Michael Richardson",
+                "role": "Kamek",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTI0OTg2NDQyOV5BMl5BanBnXkFtZTcwMTAwNjkzMQ@@._V1_FMjpg_UX450_.jpg"
             }
         ]
     },
@@ -172,7 +188,53 @@
         "plot": "When her family moves from the city to the suburbs, 11-year-old Margaret navigates new friends, feelings, and the beginning of adolescence.",
         "cover": "https://m.media-amazon.com/images/M/MV5BNTBhNmM2ODgtNDI4My00MWM5LWIzYmYtYzQzNWViNzg5MmVlXkEyXkFqcGdeQXVyOTIxNTAyMzU@._V1_FMjpg_UY6000_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BMmZjOGY0YTEtNjNjYS00NzJmLTgxNTgtYjk5MWMwODVkNjQxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX2160_.jpg",
-        "cast": []
+        "cast": [
+            {
+                "name": "Abby Ryder Fortson",
+                "role": "Margaret Simon",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNmQxYjc1MzUtZTQ5OC00ZjlkLWIyZGQtYzczY2JlNGM0ODJlXkEyXkFqcGdeQXVyMzgzNTA3MjE@._V1_FMjpg_UX799_.jpg"
+            },
+            {
+                "name": "Rachel McAdams",
+                "role": "Barbara Simon",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Benny Safdie",
+                "role": "Herb Simon",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMzE4Mjg3MTYyM15BMl5BanBnXkFtZTgwODkxOTUxNTM@._V1_FMjpg_UX508_.jpg"
+            },
+            {
+                "name": "Kathy Bates",
+                "role": "Sylvia Simon",
+                "photo": "https://m.media-amazon.com/images/M/MV5BODBkYzAwMTktNzkyMS00ZTEwLThiNjMtY2JmN2VhYTEyYmYyXkEyXkFqcGdeQXVyMDkwMzU3MQ@@._V1_FMjpg_UY2250_.jpg"
+            },
+            {
+                "name": "Gary Houston",
+                "role": "Paul Hutchins",
+                "photo": "https://m.media-amazon.com/images/M/MV5BOTMyYmIwNDMtZjI5My00ZDE2LTgzM2EtZGE2NzJlZWM4Y2YxXkEyXkFqcGdeQXVyMTE3MjA5OA@@._V1_FMjpg_UX727_.jpg"
+            },
+            {
+                "name": "Mia Dillon",
+                "role": "Mary Hutchins",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTY4NjA2MDc1M15BMl5BanBnXkFtZTcwMDgzMTYxOA@@._V1_FMjpg_UX807_.jpg"
+            },
+            {
+                "name": "Elle Graham",
+                "role": "Nancy Wheeler",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMWI1NDVkMzMtYWNkZC00NGVhLWFkMmItYjg3ZWQ3NWFmYWI0XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX960_.jpg"
+            },
+            {
+                "name": "Amari Alexis Price",
+                "role": "Janie Loomis",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMmRiODQ5YTEtNmMwNy00ZTk2LWJmN2UtOWIxZDhiNjBlYWI2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX576_.jpg"
+            },
+            {
+                "name": "Katherine Mallen Kupferer",
+                "role": "Gretchen Potter",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNDU3OTAxY2QtNTEwZS00NmMzLWE2Y2MtZjNjNzVmOTU2YmE2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX720_.jpg"
+            }
+        ]
     },
     {
         "id": 5,
@@ -185,7 +247,53 @@
         "plot": "John Wick descubre un camino para derrotar a La Mesa, pero, antes de que pueda ganar su libertad, Wick debe enfrentarse a un nuevo enemigo con poderosas alianzas en todo el mundo y fuerzas que convierten a viejos amigos en enemigos.",
         "cover": "https://m.media-amazon.com/images/M/MV5BOGYxMTI5NTItNGQ3ZC00ZTg0LWI1NmUtMzgzMjdiODQyNTQ0XkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_FMjpg_UY1920_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BNTVhNGFkMDYtOTJmNS00ZGQzLTgzYWItZDgzZTczODE5NmUxXkEyXkFqcGdeQXVyMTEzODQ2NDY4._V1_.jpg",
-        "cast": []
+        "cast": [
+            {
+                "name": "Keanu Reeves",
+                "role": "John Wick",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_FMjpg_UY2700_.jpg"
+            },
+            {
+                "name": "Donnie Yen",
+                "role": "Caine",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZGU0ZjFjZGMtZGU4My00ZmRmLTk2Y2EtOWNlZjhhZmE2MjIwXkEyXkFqcGdeQXVyMTA2MDIzMDE5._V1_FMjpg_UY2111_.jpg"
+            },
+            {
+                "name": "Bill Skarsgård",
+                "role": "Marquis",
+                "photo": "https://m.media-amazon.com/images/M/MV5BODBlNmRhODYtOWE2Ni00MTZmLWExMWYtMmRjYWNhNDRjNGU2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX2160_.jpg"
+            },
+            {
+                "name": "Laurence Fishburne",
+                "role": "Bowery King",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTc0NjczNDc1MV5BMl5BanBnXkFtZTYwMDU0Mjg1._V1_FMjpg_UX267_.jpg"
+            },
+            {
+                "name": "Ian McShane",
+                "role": "Winston",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMjg5NDg3OTQtYzMyYS00YjhhLTk2NmEtZTExNGViYTczZTU2XkEyXkFqcGdeQXVyMTU1MTU2MDI@._V1_FMjpg_UY4774_.jpg"
+            },
+            {
+                "name": "Hiroyuki Sanada",
+                "role": "Shimazu",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMjE2MzY0NTM1Ml5BMl5BanBnXkFtZTcwNzQzNzMyMw@@._V1_FMjpg_UX960_.jpg"
+            },
+            {
+                "name": "Lance Reddick",
+                "role": "Charon",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTk1OTc3OTEyMl5BMl5BanBnXkFtZTgwODI0NTI0MjE@._V1_FMjpg_UX500_.jpg"
+            },
+            {
+                "name": "Scott Adkins",
+                "role": "Killa",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZjM2MWU1YTEtNDExYS00NWVmLTkzZmQtYTg2ZDI5N2M3ZTE0XkEyXkFqcGdeQXVyMTA2NjI0MQ@@._V1_FMjpg_UY2772_.jpg"
+            },
+            {
+                "name": "Clancy Brown",
+                "role": "El Heraldo",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTUxODY3NjAzMF5BMl5BanBnXkFtZTcwMTQ5MjYwNg@@._V1_FMjpg_UY2048_.jpg"
+            }
+        ]
     },
     {
         "id": 6,

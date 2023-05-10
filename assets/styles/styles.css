@@ -132,6 +132,7 @@ aside ul {
     align-items: stretch;
     flex-flow: column wrap;
     gap: 2vmax;
+    position: relative;
 }
 
 #main > section {
@@ -295,4 +296,17 @@ aside ul {
 
 #footer section:last-child small {
     color: var(--secondary-text);
+}
+
+iframe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
+
+iframe[watch="true"] {
+    display: block;
 }

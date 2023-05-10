@@ -79,7 +79,7 @@ export const renderCarousel = () => {
                                     <div>
                                         <h2>${movie.title}</h2>
                                         <h3>${movie.originalTitle || ''}</h3>
-                                        <button class="button">
+                                        <button class="button" onclick="openMovieTrailer('${movie?.trailer}')">
                                             Mira el trailer
                                             <i class="ph-duotone ph-play-circle"></i>
                                         </button>
