@@ -38,7 +38,7 @@ export const renderMovieDetails = (movieId) =>  {
             <div id="movie-second">
                 <header>
                     <h2>${movie.title}</h2>
-                    <h3>Titulo original: ${movie.originalTitle}</h3>
+                    <h3>Título original: ${movie.originalTitle}</h3>
                     <a href="#available-days" class="button">
                         Ver funciones
                         <i class="ph-duotone ph-film-strip"></i>
@@ -53,18 +53,18 @@ export const renderMovieDetails = (movieId) =>  {
                         <h3>Detalles</h3>
                         <table class="movie-info-table">
                             <tr>
-                                <th>Generos</th>
+                                <th>Géneros</th>
                                 ${movie.genre.map(genre => `
                                     <td><span class="genre">${genre}</span></td>
                                 `).join('')}
                                 <td></td>
                             </tr>
                             <tr>
-                                <th>Clasificacion</th>
+                                <th>Clasificación</th>
                                 <td class="${renderClasification(movie.clasification)}">${movie.clasification}</td>
                             </tr>
                             <tr>
-                                <th>Duracion</th>
+                                <th>Duración</th>
                                 <td>${movie.duration}</td>
                             </tr>
                         </table>
@@ -87,7 +87,7 @@ export const renderMovieDetails = (movieId) =>  {
                                 <th>Total</th>
                             </tr>
                             <tr>
-                                <td id="ticket">USD$ ${ticket}</td>
+                                <td id="ticket">${ticket} USD</td>
                                 <td>
                                     <div class="quantity">
                                         <button type="button" class="button" onclick="decrease()">-</button>
@@ -95,7 +95,7 @@ export const renderMovieDetails = (movieId) =>  {
                                         <button type="button" class="button" onclick="increase()">+</button>
                                     </div>
                                 </td>
-                                <td id="total">USD$ ${calculateTotal()}</td>
+                                <td id="total">${calculateTotal()} USD</td>
                             </tr>
                         </table>
                     </div>
@@ -119,7 +119,7 @@ export const increaseTicketQuantity = () => {
     input.value = value
 
     const total = calculateTotal()
-    document.querySelector('#purchase-tickets #total').textContent = `USD$ ${total}`
+    document.querySelector('#purchase-tickets #total').textContent = `${total} USD`
 }
 
 export const decreaseTicketQuantity = () => {
@@ -129,7 +129,7 @@ export const decreaseTicketQuantity = () => {
     input.value = value
 
     const total = calculateTotal()
-    document.querySelector('#purchase-tickets #total').textContent = `USD$ ${total}`
+    document.querySelector('#purchase-tickets #total').textContent = `${total} USD`
 }
 
 export const calculateTotal = () => {
@@ -187,7 +187,7 @@ export const continuePurchase = () => {
         hour: buttons[1].getAttribute('data').split('-')[0],
         theater: Number(buttons[1].getAttribute('data').split('-')[1].split(' ')[1]),
         tickets: Number(ticketsQuantity),
-        total: Number(total.substring(5))
+        total: Number(total.split(' ')[0])
     }
 
     sessionStorage.setItem('movie', JSON.stringify(movie))

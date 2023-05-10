@@ -12,7 +12,7 @@ export const renderHeader = () => {
             </div>
             <div class="form-input">
                 <i class="ph-duotone ph-magnifying-glass"></i>
-                <input type="search" name="search" id="search" placeholder="Buscar peliculas...">
+                <input type="search" name="search" id="search" placeholder="Busca películas por su título o género..." oninput="searchMovies()">
             </div>
        </header>
     `)
@@ -37,7 +37,7 @@ export const renderSidebar = () => {
                         <p>Monto del boleto</p>
                         <p>
                             <i class="ph-duotone ph-ticket"></i>
-                            USD$ <span>${user?.ticket}</span>
+                            <span>${user?.ticket}</span> USD
                         </p>
                     </div>
                     <div>
@@ -52,15 +52,7 @@ export const renderSidebar = () => {
                 </li>
                 <li onclick="goToMovies()">
                     <i class="ph-duotone ph-film-reel"></i>
-                    <span>Peliculas</span>
-                </li>
-                <li>
-                    <i class="ph-duotone ph-popcorn"></i>
-                    <span>Proximos estrenos</span>
-                </li>
-                <li>
-                    <i class="ph-duotone ph-users"></i>
-                    <span>Sobre nosotros</span>
+                    <span>Películas</span>
                 </li>
             </ul>
         </aside>
@@ -124,7 +116,7 @@ export const renderMoviesPreviews = () => {
                         <section>
                             <p>${movie.title}</p>
                             <p class="subtitle">${movie.genre.join('/')}</p>
-                            <p class="subtitle">Clasificacion: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
+                            <p class="subtitle">Clasificación: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
                             <!-- <div class="rating">${renderStars(movie.rating)}</div> -->
                         </section>
                     </figure>

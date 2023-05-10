@@ -7,13 +7,13 @@ export const showDialog = (edit=true) => {
 
     if (edit) {
         title = 'Editar datos'
-        subtitle = 'Actualiza o corrige tu informacion'
+        subtitle = 'Actualiza o corrige tu información'
 
         const user = JSON.parse(sessionStorage.getItem('user'))
         const inputs = document.querySelectorAll('#dialog > form input')
         for (const input of inputs) input.value = user[input.getAttribute('name')]
     } else {
-        title = 'Bienvenid@!'
+        title = '¡Bienvenid@!'
         subtitle = 'Introduce tu nombre y el monto del boleto para continuar'
     }
 
@@ -81,8 +81,8 @@ export const updateUser = () => {
 
     const ticketBase = document.querySelector('#purchase-tickets #ticket')
     if (ticketBase) {
-        ticketBase.textContent = `USD$ ${user.ticket}`
+        ticketBase.textContent = `${user.ticket} USD`
         const total = calculateTotal()
-        document.querySelector('#purchase-tickets #total').textContent = `USD$ ${total}`
+        document.querySelector('#purchase-tickets #total').textContent = `${total} USD`
     }
 }

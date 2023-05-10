@@ -6,7 +6,7 @@ export const goToHome = () => {
     const previews = movies.toSorted(() => Math.random() - 0.5).slice(0, 5)
 
     const main = document.querySelector('#main')
-    main.removeAttribute('page', 'movie-details')
+    main.removeAttribute('page')
     main.innerHTML = `
         <section>
             <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -50,7 +50,7 @@ export const goToHome = () => {
                         <section>
                             <p>${movie.title}</p>
                             <p class="subtitle">${movie.genre.join('/')}</p>
-                            <p class="subtitle">Clasificacion: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
+                            <p class="subtitle">Clasificación: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
                             <!-- <div class="rating">${renderStars(movie.rating)}</div> -->
                         </section>
                     </figure>
@@ -64,11 +64,11 @@ export const goToHome = () => {
 
 export const goToMovies = () => {
     const main = document.querySelector('#main')
-    main.removeAttribute('page', 'movie-details')
+    main.removeAttribute('page')
     main.innerHTML = `
         <section class="main-header">
             <i class="ph-duotone ph-film-reel"></i>
-            <h2>Peliculas</h2>
+            <h2>Películas</h2>
         </section>
         <section>
             ${movies.map(movie => {
@@ -78,7 +78,7 @@ export const goToMovies = () => {
                         <section>
                             <p>${movie.title}</p>
                             <p class="subtitle">${movie.genre.join('/')}</p>
-                            <p class="subtitle">Clasificacion: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
+                            <p class="subtitle">Clasificación: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
                             <!-- <div class="rating">${renderStars(movie.rating)}</div> -->
                         </section>
                     </figure>
@@ -88,4 +88,35 @@ export const goToMovies = () => {
     `
 
     window.scrollTo(0,0)
+}
+
+export const searchMovies = () => {
+    const search = document.querySelector('#header #search').value
+
+    const regex = new RegExp(search, 'i')
+    const filteredMovies = movies.filter(movie => regex.test(movie.title) || regex.test(movie.genre) || regex.test(movie.originalTitle))
+
+    const main = document.querySelector('#main')
+    main.removeAttribute('page')
+    main.innerHTML = `
+        <section class="main-header">
+            <i class="ph-duotone ph-film-reel"></i>
+            <h2>Buscar Películas</h2>
+        </section>
+        <section>
+            ${filteredMovies.map(movie => {
+                return `
+                    <figure class="movie" onclick="renderMovieDetails(${movie.id})">
+                        <img src="${movie.cover}" alt="${movie.title}">
+                        <section>
+                            <p>${movie.title}</p>
+                            <p class="subtitle">${movie.genre.join('/')}</p>
+                            <p class="subtitle">Clasificación: <span class="${renderClasification(movie.clasification)}">${movie.clasification}</span></p>
+                            <!-- <div class="rating">${renderStars(movie.rating)}</div> -->
+                        </section>
+                    </figure>
+                `
+            }).join('')}
+        </section>
+    `
 }

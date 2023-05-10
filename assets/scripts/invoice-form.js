@@ -1,4 +1,5 @@
 import movies from '../../movies.json' assert { type: 'json' }
+import { renderInvoice } from './invoice.js'
 
 export const renderInvoiceForm = () => {
     const user = JSON.parse(sessionStorage.getItem('user'))
@@ -24,7 +25,7 @@ export const renderInvoiceForm = () => {
                 </section>
 
                 <section>
-                    <label for="user-id">Cedula de Identidad</label>
+                    <label for="user-id">Cédula de Identidad</label>
                     <div class="form-input">
                         <i class="ph-duotone ph-identification-card"></i>
                         <input type="text" name="user-id" id="user-id" placeholder="XX.XXX.XXX">
@@ -32,7 +33,7 @@ export const renderInvoiceForm = () => {
                 </section>
 
                 <section>
-                    <label for="email">Correo electronico</label>
+                    <label for="email">Correo electrónico</label>
                     <div class="form-input">
                         <i class="ph-duotone ph-envelope-simple"></i>
                         <input type="email" name="email" id="email" placeholder="janedoe@gmail.com" value="${user.email}">
@@ -40,7 +41,7 @@ export const renderInvoiceForm = () => {
                 </section>
 
                 <section>
-                    <label for="phone">Telefono</label>
+                    <label for="phone">Teléfono</label>
                     <div class="form-input">
                         <i class="ph-duotone ph-phone"></i>
                         <input type="tel" name="phone" id="phone" placeholder="+58 000 000 0000">
@@ -48,10 +49,10 @@ export const renderInvoiceForm = () => {
                 </section>
 
                 <section>
-                    <label for="address">Direccion</label>
+                    <label for="address">Dirección</label>
                     <div class="form-input">
                         <i class="ph-duotone ph-list"></i>
-                        <textarea name="address" id="address" placeholder="Ingresa tu direccion"></textarea>
+                        <textarea name="address" id="address" placeholder="Ingresa tu dirección"></textarea>
                     </div>
                 </section>
 
@@ -110,5 +111,5 @@ export const saveInvoice = () => {
 
     sessionStorage.setItem('invoice', JSON.stringify(invoice))
 
-    console.log(invoice)
+    renderInvoice()
 }

@@ -1,0 +1,182 @@
+#main[page="invoice"] {
+    align-items: center;
+}
+
+#invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#invoice-header > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1vmax;
+}
+
+#invoice-header h2 {
+    font-size: 2em;
+}
+
+#invoice-header > div > i {
+    font-size: 2vmax;
+    color: var(--primary);
+}
+
+#invoice-header > button {
+    width: 13em;
+    height: 3em;
+}
+
+#invoice-header > button > i {
+    font-size: 1.3em;
+}
+
+#invoice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: column wrap;
+    background-color: var(--container);
+    border-radius: 1.5em;
+    padding: 4vmax 0 4vmax 4vmax;
+    width: 60%;
+    gap: 2.5vmax;
+}
+
+#invoice > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 5vmax;
+}
+
+#invoice #first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 2vmax;
+    flex: 1;
+    max-width: 50%;
+}
+
+#invoice #first > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+#invoice #first > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2vmax;
+    width: 70%;
+}
+
+#invoice #first > div > div p:first-child {
+    color: var(--secondary-text);
+}
+
+#invoice #first > div h2 {
+    margin-bottom: 0.3vmax;
+    font-size: 1.8em;
+}
+
+#invoice #first > div:last-child h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#invoice #first > div:last-child p:not(p:first-child) {
+    color: var(--secondary-text);
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#invoice #second {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 2.5em 2em;
+    border-radius: 1.5em 0 0 1.5em;
+    gap: 0.5em;
+    flex: 1;
+}
+
+#invoice #second h2 {
+    font-size: 1.8rem;
+}
+
+#invoice #second i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+#invoice > section {
+    padding-right: 4vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: column wrap;
+}
+
+#invoice > section > h4 {
+    font-size: 1.3em;
+    color: var(--primary);
+}
+
+#invoice > section > table {
+    width: 100%;
+}
+
+#invoice > section > table tr td:first-child {
+    color: var(--secondary-text);
+    padding: 0.5vmax;
+}
+
+#invoice > section > table tr {
+    border-bottom: 1px dashed rgb(91, 92, 107);
+}
+
+#invoice > section > table tr td:last-child {
+    text-align: end;
+}
+
+#invoice > footer {
+    margin-top: 1vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-right: 4vmax;
+}
+
+#invoice > footer h4 {
+    margin: 0;
+}
+
+#invoice > footer h4:last-child {
+    font-size: 1.3em;
+    background-color: var(--primary);
+    border-radius: 5vmax;
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    color: var(--background);
+}

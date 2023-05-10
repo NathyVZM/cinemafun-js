@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Super Mario Bros.: La película",
         "originalTitle": "The Super Mario Bros. Movie",
-        "genre": ["Animacion", "Aventura", "Comedia"],
+        "genre": ["Animación", "Aventura", "Comedia"],
         "clasification": "A",
         "duration": "1h 32min",
         "rating": 7.3,
@@ -17,24 +17,24 @@
                 "photo": "https://m.media-amazon.com/images/M/MV5BZjdkYjg1NzMtOTY2YS00ZWI1LWEwZWYtOTU1YTM2ODA2ZWY5XkEyXkFqcGdeQXVyMTM1MjAxMDc3._V1_FMjpg_UY2048_.jpg"
             },
             {
-                "name": "Charlie Day",
-                "role": "Luigi",
-                "photo": "https://m.media-amazon.com/images/M/MV5BYjI2YWE1ODUtNTFjNy00MDgyLWJmNzgtNjBiZWE1NDY1YzFhXkEyXkFqcGdeQXVyODgwOTcwMDY@._V1_FMjpg_UX749_.jpg"
-            },
-            {
                 "name": "Anya Taylor-Joy",
                 "role": "Princesa Peach",
                 "photo": "https://m.media-amazon.com/images/M/MV5BMTllYmE5YTYtZGZmYy00ZTBlLWJlODEtYWQ0ZmU1YTJkMjJlXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_FMjpg_UY2048_.jpg"
             },
             {
-                "name": "Keegan-Michael Key",
-                "role": "Toad",
-                "photo": "https://m.media-amazon.com/images/M/MV5BZmI1MDdjZTAtMzBiMy00M2Q2LTk5YjAtOWJkMGYwODE2OGViXkEyXkFqcGdeQXVyNzMxMTU2Mg@@._V1_FMjpg_UX243_.jpg"
+                "name": "Charlie Day",
+                "role": "Luigi",
+                "photo": "https://m.media-amazon.com/images/M/MV5BYjI2YWE1ODUtNTFjNy00MDgyLWJmNzgtNjBiZWE1NDY1YzFhXkEyXkFqcGdeQXVyODgwOTcwMDY@._V1_FMjpg_UX749_.jpg"
             },
             {
                 "name": "Jack Black",
                 "role": "Bowser",
                 "photo": "https://m.media-amazon.com/images/M/MV5BYTFiMWNlNmItMDRiYy00NzA4LWE5YjItZmViNWQ2NzhhOWZlXkEyXkFqcGdeQXVyMTA2Mjc5ODMy._V1_FMjpg_UX750_.jpg"
+            },
+            {
+                "name": "Keegan-Michael Key",
+                "role": "Toad",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZmI1MDdjZTAtMzBiMy00M2Q2LTk5YjAtOWJkMGYwODE2OGViXkEyXkFqcGdeQXVyNzMxMTU2Mg@@._V1_FMjpg_UX243_.jpg"
             },
             {
                 "name": "Seth Rogen",
@@ -47,14 +47,60 @@
         "id": 2,
         "title": "Suzume",
         "originalTitle": "Suzume no Tojimari",
-        "genre": ["Animacion", "Accion", "Aventura"],
+        "genre": ["Animación", "Acción", "Aventura"],
         "clasification": "PG",
         "duration": "2h 2min",
         "rating": 7.8,
         "plot": "Una historia moderna de acción y aventuras en la que una chica de 17 años llamada Suzume ayuda a un misterioso joven a cerrar puertas desde el exterior que están provocando desastres por todo Japón.",
         "cover": "https://m.media-amazon.com/images/M/MV5BODhhY2M5NjEtZTc0OC00MDE5LWJiMWQtYTZkMTMwMTA0NmZjXkEyXkFqcGdeQXVyMTEwMjgyMzIz._V1_FMjpg_UY4096_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BYTk5YTY1MTktNjk5YS00ODAxLTg5ZTQtMDgwMmVjNmU4MGUzXkEyXkFqcGdeQXVyNTY3MDQzNTk@._V1_FMjpg_UX1504_.jpg",
-        "cast": []
+        "cast": [
+            {
+                "name": "Nanoka Hara",
+                "role": "Suzume Iwato",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTkzMTIzNjA2Ml5BMl5BanBnXkFtZTgwNjM5NjExMzE@._V1_FMjpg_UX2000_.jpg"
+            },
+            {
+                "name": "Hokuto Matsumura",
+                "role": "Souta Munakata",
+                "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+            },
+            {
+                "name": "Ann Yamane",
+                "role": "Daijin",
+                "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+            },
+            {
+                "name": "Eri Fukatsu",
+                "role": "Tamaki Iwato",
+                "photo": "https://m.media-amazon.com/images/M/MV5BOTAyMDYyMDA3N15BMl5BanBnXkFtZTgwNTIxNjU3NjE@._V1_FMjpg_UX2000_.jpg"
+            },
+            {
+                "name": "Shôta Sometani",
+                "role": "Minoru Okabe",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMDE1NGRhMzYtNDIyMi00NzAzLThkYmYtNGRkN2Y0MTI4MmMwXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_FMjpg_UX438_.jpg"
+            },
+            {
+                "name": "Sairi Itô",
+                "role": "Rumi Ninomiya",
+                "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+            },
+            {
+                "name": "Kotone Hanase",
+                "role": "Chika Amabe",
+                "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+            },
+            {
+                "name": "Kana Hanazawa",
+                "role": "Tsubame Iwato",
+                "photo": "https://m.media-amazon.com/images/M/MV5BOGNlY2VlMTUtN2VhNS00MTMzLTk2YjctODc5MjYzNjhhYmRhXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_FMjpg_UX717_.jpg"
+            },
+            {
+                "name": "Ryunosuke Kamiki",
+                "role": "Tomoya Serizawa",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNzlkYzdjYWEtOTkyNC00NDNhLWIyNTItZmFjNWQxZDZmNzFlXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_FMjpg_UX1200_.jpg"
+            }
+        ]
     },
     {
         "id": 3,
@@ -67,7 +113,53 @@
         "plot": "Beth visita a su hermana mayor, Ella, que está criando a 3 niños en un pequeño apartamento en Los Ángeles. Su reunión es muy corta cuando encuentran un libro demoníaco, The Necronomicon Ex-Mortis.",
         "cover": "https://m.media-amazon.com/images/M/MV5BOTBmMTk5MGMtMDZhMi00YTA3LTk2ZmYtYzdmZTEwNDgzMDFiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1013_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BZDE2OWY5NWEtNmMzNC00NWI1LWEwOTgtMzlhMDlmMzZhZWYyXkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_FMjpg_UX2160_.jpg",
-        "cast": []
+        "cast": [
+            {
+                "name": "Lily Sullivan",
+                "role": "Beth",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTljNDMxODQtODRiMC00NTM1LTljMTYtZWQzN2E2NTA1MzRlXkEyXkFqcGdeQXVyMTA2NzE3NTc2._V1_FMjpg_UY3136_.jpg"
+            },
+            {
+                "name": "Alyssa Sutherland",
+                "role": "Ellie",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZTFhMTU0ODAtNjNjZS00YTcwLWE0Y2ItMWM0OGJiOWJhOTA1XkEyXkFqcGdeQXVyMjc0MTMxMDI@._V1_FMjpg_UX634_.jpg"
+            },
+            {
+                "name": "Nell Fisher",
+                "role": "Kassie",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZDVhMzg3NzYtYTMyZS00ZGI4LTgyYzYtODkwMGM4OWQ1NGUyXkEyXkFqcGdeQXVyMTIzODA2MjE1._V1_FMjpg_UY3724_.jpg"
+            },
+            {
+                "name": "Gabrielle Echols",
+                "role": "Bridget",
+                "photo": "https://m.media-amazon.com/images/M/MV5BOTNkOGFjYzAtZTlmNi00ZjI3LWFmNDEtYzcwMzFhYzM0Zjg1XkEyXkFqcGdeQXVyMTEzMjkyODg5._V1_FMjpg_UX2160_.jpg"
+            },
+            {
+                "name": "Morgan Davies",
+                "role": "Danny",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZTkwOGNmY2YtNzdhMC00NDc4LWFmMDQtMTFiYzNhNzY2NjNkXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_FMjpg_UX2160_.jpg"
+            },
+            {
+                "name": "Anna-Maree Thomas",
+                "role": "Jessica",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZDkzZWE2OTktZWI1MC00MDYxLWE4ZWQtZTI1MGUwMWJmM2RmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UY2700_.jpg"
+            },
+            {
+                "name": "Richard Crouchley",
+                "role": "Caleb",
+                "photo": "https://m.media-amazon.com/images/M/MV5BYzhkMThiYzItYTY1Ni00NWJlLTkzY2EtOThkNThhMmE1OGNiXkEyXkFqcGdeQXVyMTI1MDEzNDc2._V1_FMjpg_UY6575_.jpg"
+            },
+            {
+                "name": "Mirabai Pease",
+                "role": "Teresa",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMDkyZjBiZjktNTBlMC00NjEwLWI2OGEtZjBmMjRlZGYyNGExXkEyXkFqcGdeQXVyOTA4MDE4OTE@._V1_FMjpg_UY5472_.jpg"
+            },
+            {
+                "name": "Jayden Daniels",
+                "role": "Gabriel",
+                "photo": "https://m.media-amazon.com/images/M/MV5BY2NhNTBiYmQtZmU3MS00ODJlLTkzN2UtNGZiZDM5OGFhZTg0XkEyXkFqcGdeQXVyNTQ1NDUyMDc@._V1_FMjpg_UY2699_.jpg"
+            }
+        ]
     },
     {
         "id": 4,
@@ -86,7 +178,7 @@
         "id": 5,
         "title": "John Wick 4",
         "originalTitle": "John Wick: Chapter 4",
-        "genre": ["Accion", "Crimen", "Suspenso"],
+        "genre": ["Acción", "Crimen", "Suspenso"],
         "clasification": "16",
         "duration": "2h 49min",
         "rating": 8.2,
@@ -99,7 +191,7 @@
         "id": 6,
         "title": "Dungeons & Dragons: Honor entre ladrones",
         "originalTitle": "Dungeons & Dragons: Honor Among Thieves",
-        "genre": ["Accion", "Aventura", "Comedia"],
+        "genre": ["Acción", "Aventura", "Comedia"],
         "clasification": "12",
         "duration": "2h 14min",
         "rating": 7.5,
@@ -138,7 +230,7 @@
         "id": 9,
         "title": "Guardianes de la Galaxia Vol. 3",
         "originalTitle": "Guardians of the Galaxy Volume 3",
-        "genre": ["Accion", "Aventura", "Comedia"],
+        "genre": ["Acción", "Aventura", "Comedia"],
         "clasification": "12",
         "duration": "2h 30min",
         "rating": 8.3,
@@ -151,7 +243,7 @@
         "id": 10,
         "title": "¡Shazam! La furia de los dioses",
         "originalTitle": "Shazam! Fury of the Gods",
-        "genre": ["Accion", "Aventura", "Comedia"],
+        "genre": ["Acción", "Aventura", "Comedia"],
         "clasification": "12",
         "duration": "2h 10min",
         "rating": 6.1,
