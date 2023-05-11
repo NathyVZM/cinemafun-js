@@ -18,10 +18,10 @@ export const renderInvoice = () => {
       </div>
       <button type="button" class="button" id="desktop-btn" onclick="printInvoice('${cleanFilename(movie.title)}')">
           Descargar
-          <i class="ph-duotone ph-file-arrow-down"></i>
+          <i class="ph ph-file-pdf"></i>
       </button>
       <button type="button" class="button" id="mobile-btn" onclick="printInvoice('${cleanFilename(movie.title)}')">
-          <i class="ph-duotone ph-file-arrow-down"></i>
+        <i class="ph ph-file-pdf"></i>
       </button>
     </header>
 
