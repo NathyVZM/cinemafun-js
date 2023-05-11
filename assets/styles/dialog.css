@@ -1,0 +1,217 @@
+/* dialog */
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to bottom,
+    rgb(100, 100, 136, 0.3),
+    rgb(58, 58, 80, 0.3) 60%
+  );
+  border: none;
+  outline: none;
+  border-radius: 1.5em;
+  width: 39em;
+  height: 46em;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: column wrap;
+  padding: 3em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+  backdrop-filter: blur(2em);
+}
+
+dialog[open] {
+  opacity: 1;
+  visibility: visible;
+}
+
+dialog[edit="true"] {
+  background: linear-gradient(
+    to bottom,
+    rgb(100, 100, 136, 0.5),
+    rgb(58, 58, 80, 0.5) 60%
+  );
+}
+
+dialog > header {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column wrap;
+  gap: 1.5em;
+  flex: 1.2;
+}
+
+dialog > header > section:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 0.5em;
+}
+
+dialog > header > section:last-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  gap: 0.3em;
+}
+
+dialog > header h1,
+dialog > header i {
+  font-size: 1.5em;
+  color: var(--primary);
+}
+
+dialog > header > section h2 {
+  font-size: 1.4em;
+}
+
+dialog > header > section h3 {
+  font-size: 1.15em;
+  color: var(--secondary-text);
+}
+
+dialog > form {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column wrap;
+  gap: 1.6em;
+  flex: 2;
+}
+
+dialog > form > section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: column wrap;
+  gap: 0.4vmax;
+}
+
+dialog > form > section > label {
+  margin-left: 0.5em;
+}
+
+dialog > footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-flow: row wrap;
+  flex: 1;
+}
+
+dialog[edit="true"] > footer {
+  justify-content: space-between;
+}
+
+dialog > footer > .button {
+  width: 12em;
+  height: 3em;
+}
+
+dialog[edit="false"] #dialog-cancel,
+dialog[edit="false"] #dialog-edit {
+  display: none;
+}
+
+dialog[edit="true"] #dialog-cancel,
+dialog[edit="true"] #dialog-edit {
+  display: block;
+}
+
+dialog[edit="false"] #dialog-access {
+  display: block;
+}
+
+dialog[edit="true"] #dialog-access {
+  display: none;
+}
+
+#trailer-dialog {
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 3vmax;
+}
+
+#trailer-dialog button {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 1vmax;
+  right: 1vmax;
+  background-color: var(--container);
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0.3em;
+}
+
+#trailer-dialog button i {
+  font-size: 1.5em;
+}
+
+iframe {
+  border-radius: 1.5em;
+}
+
+@media screen and (orientation: portrait) {
+  dialog {
+    width: 92vw;
+    height: 40em;
+    padding: 2em;
+    gap: 1em;
+  }
+
+  dialog > header h1,
+  dialog > header i {
+    font-size: 1.3em;
+  }
+
+  dialog > header > section h2 {
+    font-size: 1.1em;
+  }
+
+  dialog > header > section h3 {
+    font-size: 0.95em;
+  }
+
+  dialog > footer > .button {
+    width: 100%;
+  }
+
+  dialog[edit="true"] > footer > .button {
+    width: 8em;
+  }
+
+  iframe {
+    object-fit: contain;
+    width: 80vw;
+    height: 30vh;
+  }
+
+  #trailer-dialog {
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 8vw;
+  }
+
+  #trailer-dialog button {
+    font-size: 0.9em;
+    padding: 0.3em;
+  }
+}

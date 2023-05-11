@@ -39,10 +39,16 @@ export const renderMovieDetails = (movieId) =>  {
                 <header>
                     <h2>${movie.title}</h2>
                     <h3>Título original: ${movie.originalTitle}</h3>
-                    <a href="#available-days" class="button">
-                        Ver funciones
-                        <i class="ph-duotone ph-film-strip"></i>
-                    </a>
+                    <div>
+                        <a href="#days" class="button">
+                            Ver funciones
+                            <i class="ph-duotone ph-film-strip"></i>
+                        </a>
+                        <button class="button" onclick="openMovieTrailer('${movie.trailer}')">
+                            Mira el trailer
+                            <i class="ph-duotone ph-play-circle"></i>
+                        </button>
+                    </div>
                 </header>
 
                 <main>
@@ -52,7 +58,7 @@ export const renderMovieDetails = (movieId) =>  {
                     <div>
                         <h3>Detalles</h3>
                         <table class="movie-info-table">
-                            <tr>
+                            <tr id="days">
                                 <th>Géneros</th>
                                 ${movie.genre.map(genre => `
                                     <td><span class="genre">${genre}</span></td>
@@ -110,7 +116,8 @@ export const renderMovieDetails = (movieId) =>  {
         </section>
     `
 
-    window.scrollTo(0, 0)
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth'})
 }
 
 export const increaseTicketQuantity = () => {
@@ -161,7 +168,7 @@ export const selectDay = day => {
         </ul>
     `
     schedules.setAttribute('selected-day', true)
-    window.scrollTo(0, 700)
+    window.scrollTo(0, 900)
 }
 
 export const selectHour = (hour, room) => {

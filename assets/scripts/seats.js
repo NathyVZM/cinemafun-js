@@ -32,7 +32,7 @@ export const renderSeatsPage = () => {
         <header id="seats-header">
             <section>
                 <h2>${movie.title}</h2>
-                <p>${movieInfo.tickets} asientos</p>
+                <p>${movieInfo.tickets} ${movieInfo.tickets === 1 ? 'asiento' : 'asientos'}</p>
             </section>
             <section>
                 <div>
@@ -100,7 +100,8 @@ export const renderSeats = () => {
     }
 
     main.appendChild(table)
-    window.scrollTo(0, 0)
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth'})
 }
 
 export const selectSeat = seat => {

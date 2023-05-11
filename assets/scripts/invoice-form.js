@@ -9,7 +9,7 @@ export const renderInvoiceForm = () => {
     const main = document.querySelector('#main')
     main.setAttribute('page', 'invoice-form')
     main.innerHTML = `
-        <header>
+        <header class="main-header">
             <i class="ph-duotone ph-credit-card"></i>
             <h2>Ingresa tus datos para pagar</h2>
         </header>
@@ -57,7 +57,10 @@ export const renderInvoiceForm = () => {
                 </section>
 
                 <footer>
-                    <button type="button" class="button" onclick="saveInvoice()">Pagar</button>
+                    <button type="button" class="button" onclick="saveInvoice()">
+                        Pagar
+                        <i class="ph ph-credit-card"></i>
+                    </button>
                 </footer>
             </form>
             <div id="invoice-movie">
@@ -94,7 +97,8 @@ export const renderInvoiceForm = () => {
         </section>
     `
 
-    window.scrollTo(0, 0)
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 export const saveInvoice = () => {

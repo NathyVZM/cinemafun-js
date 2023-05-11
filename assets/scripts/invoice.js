@@ -1,137 +1,144 @@
 import movies from '../../movies.json' assert { type: 'json' }
+import { cleanFilename } from './miscellaneous.js'
 
 export const renderInvoice = () => {
-  const main = document.querySelector('#main')
-  main.setAttribute('page', 'invoice')
+    const main = document.querySelector('#main')
+    main.setAttribute('page', 'invoice')
 
-  const user = JSON.parse(sessionStorage.getItem('user'))
-  const movieInfo = JSON.parse(sessionStorage.getItem('movie'))
-  const movie = movies.find(m => m.id === movieInfo.movieId)
-  const invoice = JSON.parse(sessionStorage.getItem('invoice'))
+    const user = JSON.parse(sessionStorage.getItem('user'))
+    const movieInfo = JSON.parse(sessionStorage.getItem('movie'))
+    const movie = movies.find(m => m.id === movieInfo.movieId)
+    const invoice = JSON.parse(sessionStorage.getItem('invoice'))
 
-  main.innerHTML = `
+    main.innerHTML = `
     <header id="invoice-header">
       <div>
           <i class="ph-duotone ph-check-circle"></i>
           <h2>¡Tu pago ha sido completado!</h2>
       </div>
-      <button type="button" class="button" onclick="printInvoice('${movie.title}')">
+      <button type="button" class="button" id="desktop-btn" onclick="printInvoice('${cleanFilename(movie.title)}')">
           Descargar
+          <i class="ph-duotone ph-file-arrow-down"></i>
+      </button>
+      <button type="button" class="button" id="mobile-btn" onclick="printInvoice('${cleanFilename(movie.title)}')">
           <i class="ph-duotone ph-file-arrow-down"></i>
       </button>
     </header>
 
-    <div id="invoice">
-      <header>
-          <section id="first">
-              <div>
-                  <h2>${movie.title}</h2>
-                  <div>
-                      <p>Factura</p>
-                      <p>#1-0000</p>
-                  </div>
-                  <div>
-                      <p>Fecha</p>
-                      <p>${new Date().toLocaleString('es', { 'day': 'numeric', month: 'long', year: 'numeric' })}</p>
-                  </div>
-                  <div>
-                      <p>Monto total</p>
-                      <p>${movieInfo.total} USD</p>
-                  </div>
-              </div>
-              <div>
-                  <h3>${invoice.name}</h3>
-                  <p>${invoice.address}</p>
-                  <p>${invoice.email}</p>
-                  <p>${invoice.phone}</p>
-              </div>
-          </section>
-          <section id="second">
-              <i class="ph-duotone ph-film-slate"></i>
-              <h2 class="logo">CINEMAFUN</h2>
-          </section>
-      </header>
+    <main>
+        <div id="invoice">
+            <header>
+                <section id="first">
+                    <div>
+                        <h2>${movie.title}</h2>
+                        <div>
+                            <p>Factura</p>
+                            <p>#1-0000</p>
+                        </div>
+                        <div>
+                            <p>Fecha</p>
+                            <p>${new Date().toLocaleString('es', { 'day': 'numeric', month: 'long', year: 'numeric' })}</p>
+                        </div>
+                        <div>
+                            <p>Monto total</p>
+                            <p>${movieInfo.total} USD</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>${invoice.name}</h3>
+                        <p>${invoice.address}</p>
+                        <p>${invoice.email}</p>
+                        <p>${invoice.phone}</p>
+                    </div>
+                </section>
+                <section id="second">
+                    <i class="ph-duotone ph-film-slate"></i>
+                    <h2 class="logo">CINEMAFUN</h2>
+                </section>
+            </header>
 
-      <section>
-          <h4>Información personal</h3>
-              <table>
-                  <tr>
-                      <td>Nombre</td>
-                      <td>${invoice.name}</td>
-                  </tr>
-                  <tr>
-                      <td>Cédula de Identidad</td>
-                      <td>${invoice.userId}</td>
-                  </tr>
-                  <tr>
-                      <td>Correo electrónico</td>
-                      <td>${invoice.email}</td>
-                  </tr>
-                  <tr>
-                      <td>Teléfono</td>
-                      <td>${invoice.phone}</td>
-                  </tr>
-                  <tr>
-                      <td>Dirección</td>
-                      <td>${invoice.address}</td>
-                  </tr>
-              </table>
-      </section>
+            <section>
+                <h4>Información personal</h3>
+                    <table>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>${invoice.name}</td>
+                        </tr>
+                        <tr>
+                            <td>Cédula de Identidad</td>
+                            <td>${invoice.userId}</td>
+                        </tr>
+                        <tr>
+                            <td>Correo electrónico</td>
+                            <td>${invoice.email}</td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td>${invoice.phone}</td>
+                        </tr>
+                        <tr>
+                            <td>Dirección</td>
+                            <td>${invoice.address}</td>
+                        </tr>
+                    </table>
+            </section>
 
-      <section>
-          <h4>Información de la compra</h3>
-              <table>
-                  <tr>
-                      <td>Película</td>
-                      <td>${movie.title}</td>
-                  </tr>
-                  <tr>
-                      <td>Fecha</td>
-                      <td>${movieInfo.day}</td>
-                  </tr>
-                  <tr>
-                      <td>Hora</td>
-                      <td>${movieInfo.hour}</td>
-                  </tr>
-                  <tr>
-                      <td>Sala</td>
-                      <td>${movieInfo.theater}</td>
-                  </tr>
-                  <tr>
-                      <td>Boletos</td>
-                      <td>${movieInfo.tickets}</td>
-                  </tr>
-                  <tr>
-                      <td>Asientos</td>
-                      <td>${movieInfo.seats.join(', ')}</td>
-                  </tr>
-                  <tr>
-                      <td>Precio Unitario</td>
-                      <td>${user.ticket} USD</td>
-                  </tr>
-              </table>
-      </section>
+            <section>
+                <h4>Información de la compra</h3>
+                    <table>
+                        <tr>
+                            <td>Película</td>
+                            <td>${movie.title}</td>
+                        </tr>
+                        <tr>
+                            <td>Fecha</td>
+                            <td>${movieInfo.day}</td>
+                        </tr>
+                        <tr>
+                            <td>Hora</td>
+                            <td>${movieInfo.hour}</td>
+                        </tr>
+                        <tr>
+                            <td>Sala</td>
+                            <td>${movieInfo.theater}</td>
+                        </tr>
+                        <tr>
+                            <td>Boletos</td>
+                            <td>${movieInfo.tickets}</td>
+                        </tr>
+                        <tr>
+                            <td>Asientos</td>
+                            <td>${movieInfo.seats.join(', ')}</td>
+                        </tr>
+                        <tr>
+                            <td>Precio Unitario</td>
+                            <td>${user.ticket} USD</td>
+                        </tr>
+                    </table>
+            </section>
 
-      <footer>
-          <h4>TOTAL</h4>
-          <h4>${movieInfo.total} USD</h4>
-      </footer>
-    </div>
+            <footer>
+                <h4>TOTAL</h4>
+                <h4>${movieInfo.total} USD</h4>
+            </footer>
+        </div>
+    </main>
   `
 
-  window.scrollTo(0, 0)
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 
 export const printInvoice = movieTitle => {
-  const invoiceContainer = document.querySelector('#invoice')
-  const lights = document.querySelector('#lights')
-  const clonedContainer = invoiceContainer.cloneNode(true)
+    const invoiceContainer = document.querySelector('#invoice')
+    const lights = document.querySelector('#lights')
+    const clonedContainer = invoiceContainer.cloneNode(true)
 
-  const printWindow = window.open('', '_blank')
-  printWindow.document.open()
+    const printWindow = window.open('', '_blank')
+    printWindow.document.open()
 
-  printWindow.document.write(`
+    printWindow.document.write(`
       <html>
       <head>
         <title>Factura - ${movieTitle} - CINEMAFUN</title>
@@ -153,9 +160,7 @@ export const printInvoice = movieTitle => {
             <!-- Styles -->
             <link rel="stylesheet" href="assets/styles/theme.css">
             <link rel="stylesheet" href="assets/styles/styles.css">
-            <link rel="stylesheet" href="assets/styles/seats.css">
-            <link rel="stylesheet" href="assets/styles/invoice-form.css">
-            <link rel="stylesheet" href="assets/styles/invoice.css">
+            <link rel="stylesheet" href="assets/styles/print.css">
 
             <style>
                 /* Estilos adicionales para el documento de impresión */
@@ -194,14 +199,14 @@ export const printInvoice = movieTitle => {
       </html>
     `)
 
-  printWindow.document.close()
+    printWindow.document.close()
 
-  printWindow.onload = () => {
-    setTimeout(() => {
-      printWindow.print()
-      printWindow.close()
-    }, 10)
-  }
+    printWindow.onload = () => {
+        setTimeout(() => {
+            printWindow.print()
+            printWindow.close()
+        }, 10)
+    }
 }
 
 

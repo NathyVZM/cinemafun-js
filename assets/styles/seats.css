@@ -23,14 +23,14 @@
 }
 
 #seats-header > section:first-child {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-flow: column wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: column wrap;
 }
 
 #seats-header > section:first-child p {
-    color: var(--secondary-text);
+  color: var(--secondary-text);
 }
 
 #seats-header > section:last-child {
@@ -66,7 +66,12 @@
   gap: 3vmax;
   padding: 3vmax 2.5vmax 0vmax;
   position: relative;
-  background: linear-gradient(to bottom, transparent, rgba(255, 74, 177, 0.1) 10%, transparent);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 74, 177, 0.1) 10%,
+    transparent
+  );
 }
 
 #seats-content section {
@@ -79,36 +84,36 @@
 }
 
 #seats-content section ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 1em;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 1em;
+  margin: 0;
 }
 
 .arc::before {
-    content: "";
-    position: absolute;
-    top: 0vmax;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 65vmax;
-    height: 10vmax;
-    border-top: 10px solid #ff4ab1;
-    border-inline: 1px solid transparent;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0vmax;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 65vmax;
+  height: 10vmax;
+  border-top: 10px solid #ff4ab1;
+  border-inline: 1px solid transparent;
+  border-radius: 50%;
 }
 
 #seats-content table {
-    width: 100%;
+  width: 100%;
 }
 
 #seats-content table th:nth-child(5),
 #seats-content table td:nth-child(5),
 #seats-content table th:nth-child(21),
 #seats-content table td:nth-child(21) {
-    margin-right: 3rem;
+  margin-right: 3rem;
 }
 
 #seats-content table i {
@@ -125,7 +130,7 @@
 }
 
 #seats-content table td[selected="true"] {
-    background-color: rgb(92, 200, 255, 0.1);
+  background-color: rgb(92, 200, 255, 0.1);
 }
 
 #seats-content table td[busy="true"] i {
@@ -150,21 +155,21 @@
 }
 
 #seats-content table td {
-    cursor: pointer;
-    border-radius: 10em;
-    display: inline-block;
+  cursor: pointer;
+  border-radius: 10em;
+  display: inline-block;
 }
 
 #seats-content table td[selected="false"]:hover {
-    background-color: rgb(255, 204, 112, 0.1);
+  background-color: rgb(255, 204, 112, 0.1);
 }
 
 #seats-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-inline: 2.5vmax;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-inline: 2.5vmax;
 }
 
 #seats-footer > section {
@@ -186,10 +191,111 @@
 }
 
 #seats-footer .button {
-    width: 15em;
-    height: 3em;
+  width: 15em;
+  height: 3em;
 }
 
 #seats-footer .button i {
+  font-size: 1.3em;
+}
+
+@media screen and (orientation: portrait) {
+  #main[page="seats"] {
+    padding-block: 3vmax;
+  }
+
+  #seats-header {
+    padding-inline: 3vmax;
+  }
+
+  #seats-header h2 {
+    font-size: 1.1em;
+  }
+
+  #seats-header > section:first-child {
+    flex: 1;
+  }
+
+  #seats-header > section:last-child {
+    /* flex: 1; */
+  }
+
+  #seats-header > section > div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 0.1em;
+  }
+
+  #seats-header > section > div > i {
+    font-size: 1.4em;
+    background-color: var(--primary);
+    border-radius: 0.5em;
+    color: var(--background);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #seats-header > section div p:first-child {
+    font-size: 1.1em;
+    line-height: 1;
+  }
+
+  #seats-header > section div p:last-child {
+    line-height: 1;
+    font-size: 0.95em;
+  }
+
+  #seats-content {
+    align-items: center;
+  }
+
+  #seats-content::before {
+    width: 80vw;
+  }
+
+  #seats-content h3 {
+    font-size: 1.2em;
+  }
+
+  #seats-content table {
+    zoom: 24%;
+    width: fit-content;
+  }
+
+  .available p {
+    font-size: 1em;
+  }
+
+  .selected p {
+    font-size: 1em;
+  }
+
+  .available i {
+    color: var(--secondary);
+    font-size: 1.4em;
+  }
+
+  .selected i {
+    color: var(--tertiary);
+    font-size: 1.4em;
+  }
+
+  #seats-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-inline: 2.5vmax;
+    gap: 3vh;
+  }
+
+  #seats-footer .button {
+    width: 100%;
+  }
+
+  #seats-footer .button i {
     font-size: 1.3em;
+  }
 }

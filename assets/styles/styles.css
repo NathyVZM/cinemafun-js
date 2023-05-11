@@ -1,312 +1,439 @@
 /* Header */
 
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 5vmax;
-    margin-bottom: 2vmax;
-    position: sticky;
-    top: 0em;
-    backdrop-filter: blur(2em);
-    padding-block: 1vmax;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 5vmax;
+  margin-bottom: 2vmax;
+  position: sticky;
+  top: 0em;
+  backdrop-filter: blur(2em);
+  padding-block: 1vmax;
+  z-index: 10;
 }
 
-#header div:last-child {
-    flex: 1;
+#header aside {
+  display: none;
 }
 
-#header div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 0.5em;
+#header > div:last-child {
+  flex: 1;
 }
 
-#header div:first-child i {
-    font-size: 1.5em;
-    color: var(--primary);
+#header > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#header > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 0.5em;
+}
+
+#header > div > button {
+  display: none;
+}
+
+#header div:first-child > div i {
+  font-size: 1.5em;
+  color: var(--primary);
 }
 
 #header h1 {
-    font-size: 1.5em;
-    margin: 0;
+  font-size: 1.5em;
+  margin: 0;
 }
 
-/* aside */ 
+/* aside */
 
 aside {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-flow: column;
-    width: 14%;
-    float: left;
-    position: sticky;
-    top: 8em;
-    gap: 2vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: column;
+  width: 14%;
+  float: left;
+  position: sticky;
+  top: 8em;
+  gap: 2vmax;
 }
 
 aside section {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-flow: column wrap;
-    padding: 1.2vmax;
-    gap: 0.7vmax;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column wrap;
+  padding: 1.2vmax;
+  gap: 0.7vmax;
+  width: fit-content;
 }
 
 aside #first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-    gap: 0.7vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  gap: 0.7vmax;
 }
 
 aside #first div p:last-child {
-    font-size: 0.8em;
-    color: var(--secondary-text);
-    width: 11.1em;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+  font-size: 0.8em;
+  color: var(--secondary-text);
+  width: 11.1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 aside #second {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 aside #second > div:first-child {
-    display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
-    flex-flow: column;
-    height: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  flex-flow: column;
+  height: 4em;
 }
 
 aside #second > div:first-child p:first-child {
-    font-size: 0.8em;
-    color: var(--secondary-text);
+  font-size: 0.8em;
+  color: var(--secondary-text);
 }
 
 aside #second > div:first-child p:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    /* gap: 0.5em; */
-    font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /* gap: 0.5em; */
+  font-size: 1.1em;
 }
 
 aside #second > div:first-child i {
-    font-size: 1.5rem;
-    margin-right: 0.5em;
+  font-size: 1.5rem;
+  margin-right: 0.5em;
 }
 
 aside ul {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-flow: column;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 1em;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 1em;
 }
 
 /* main */
 
 #main {
-    width: 84%;
-    float: right;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-flow: column wrap;
-    gap: 2vmax;
-    position: relative;
+  width: 84%;
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: column wrap;
+  gap: 2vmax;
+  position: relative;
 }
 
 #main > section {
-    width: 100%;
+  width: 100%;
 }
 
 #main > .main-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 1em;
 }
 
 #main > .main-header i {
-    font-size: 2em;
-    color: var(--primary);
+  font-size: 2em;
+  color: var(--primary);
 }
 
 #main > .main-header h2 {
-    font-size: 2em;
-    line-height: 1;
+  font-size: 2em;
+  line-height: 1;
 }
 
 #main > section:last-child {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 2vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 2vmax;
 }
 
-.carousel, .carousel-inner {
-    width: 100%;
-    height: 35rem;
-    border-radius: 1.5em;
+.carousel,
+.carousel-inner {
+  width: 100%;
+  height: 35rem;
+  border-radius: 1.5em;
 }
 .carousel-item > img {
-    width: 100%;
-    height: 35rem;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carousel-caption {
-    left: 5%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-flow: row wrap;
-    gap: 1vmax;
-    z-index: 1;
+  left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-flow: row wrap;
+  gap: 1vmax;
+  z-index: 1;
 }
 
 .carousel-caption::before {
-    content: "";
-    position: absolute;
-    bottom: -1.25rem;
-    left: -15%;
-    background: linear-gradient(to top, black, transparent);
-    width: 100vw;
-    height: 30vh;
-    border-radius: 0 0 1.5em 1.5em;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: -1.25rem;
+  left: -15%;
+  background: linear-gradient(to top, black, transparent);
+  width: 100vw;
+  height: 30vh;
+  border-radius: 0 0 1.5em 1.5em;
+  z-index: -1;
 }
 
 .carousel-caption img {
-    width: 10vmax;
-    height: 15vmax;
-    border-radius: 1.2em;
-    position: relative;
-    object-fit: cover;
+  width: 10vmax;
+  height: 15vmax;
+  border-radius: 1.2em;
+  position: relative;
+  object-fit: cover;
 }
 
 .carousel-caption div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: column wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
 }
 
 .carousel-caption div h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .carousel-caption div h3 {
-    color: #ccd5ffcc;
-    font-size: 1.5em;
+  color: #ccd5ffcc;
+  font-size: 1.5em;
 }
 
 .carousel-caption .button {
-    width: 15em;
-    height: 3em;
-    font-weight: 500;
-    font-size: 1.2em;
-    position: relative;
-    z-index: 100;
+  width: 15em;
+  height: 3em;
+  font-weight: 500;
+  font-size: 1.2em;
+  position: relative;
+  z-index: 100;
 }
 
 .carousel-caption .button i {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 /* footer */
 
 #footer {
-    clear: both;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column wrap;
-    gap: 1em;
-    padding-top: 5vmax;
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 1em;
+  padding-top: 5vmax;
 }
 
 #footer section {
-    flex: 1;
-    width: 100%;
+  flex: 1;
+  width: 100%;
 }
 
 #footer section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 #footer section:first-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 0.5em;
 }
 
 #footer section:first-child i {
-    color: var(--primary);
-    font-size: 1.8em;
+  color: var(--primary);
+  font-size: 1.8em;
 }
 
 #footer section:first-child h2 {
-    font-size: 1.3em;
-    margin: 0;
+  font-size: 1.3em;
+  margin: 0;
 }
 
 #footer section:nth-child(2) {
-    gap: 2vmax;
+  gap: 2vmax;
 }
 
 #footer section:nth-child(2) i {
-    font-size: 1.5em;
-    color: var(--secondary-text);
+  font-size: 1.5em;
+  color: var(--secondary-text);
 }
 
 #footer section:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #footer section:last-child small {
-    color: var(--secondary-text);
+  color: var(--secondary-text);
 }
 
-iframe {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 1.7em;
+  height: 1.7em;
+  font-size: 24px;
+  background-color: var(--background);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  z-index: 10000;
+}
+
+#scroll-to-top-button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (orientation: portrait) {
+  #header > div:first-child {
+    width: 100%;
+  }
+
+  #header > div > .button {
+    display: flex;
+    width: 10vw;
+    height: 10vw;
+  }
+
+  #header aside.show-navbar {
+    display: flex; /* Mostrar la barra de navegación cuando la clase show-navbar esté presente */
+  }
+
+  aside {
     display: none;
-    z-index: 1000;
-}
+  }
 
-iframe[watch="true"] {
-    display: block;
+  #header aside {
+    width: 100%;
+    padding-inline: 2vmax;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header aside section {
+    padding: 2vmax;
+    width: 80%;
+  }
+
+  #header aside #first {
+    gap: 1.5vmax;
+    display: flex;
+  }
+
+  #main {
+    width: 100%;
+    float: none;
+  }
+
+  #main > section:last-child {
+    justify-content: center;
+  }
+
+  #main > section:last-child > figure:last-child {
+    margin-right: auto;
+    margin-left: 1vw;
+  }
+
+  /* #main > .main-header {
+    gap: 0.5em;
+  } */
+
+  #main > .main-header h2 {
+    font-size: 1.5em;
+  }
+
+  #main > .main-header i {
+    font-size: 1.5em;
+  }
+
+  .carousel,
+  .carousel-inner {
+    height: 35vh;
+  }
+  .carousel-item > img {
+    height: 35vh;
+  }
+
+  .carousel-caption {
+    padding-bottom: 0;
+    gap: 2vmax;
+  }
+
+  .carousel-caption div h2 {
+    font-size: 1em;
+  }
+
+  .carousel-caption div h3 {
+    color: #ccd5ffcc;
+    font-size: 0.9em;
+  }
+
+  .carousel-caption::before {
+    width: 200vw;
+  }
+
+  .carousel-caption .button {
+    width: 35vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 0.9em;
+    position: relative;
+    z-index: 100;
+  }
+
+  .carousel-caption .button i {
+    font-size: 1.3em;
+  }
 }

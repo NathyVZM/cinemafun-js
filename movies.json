@@ -70,6 +70,7 @@
         "plot": "Una historia moderna de acción y aventuras en la que una chica de 17 años llamada Suzume ayuda a un misterioso joven a cerrar puertas desde el exterior que están provocando desastres por todo Japón.",
         "cover": "https://m.media-amazon.com/images/M/MV5BODhhY2M5NjEtZTc0OC00MDE5LWJiMWQtYTZkMTMwMTA0NmZjXkEyXkFqcGdeQXVyMTEwMjgyMzIz._V1_FMjpg_UY4096_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BYTk5YTY1MTktNjk5YS00ODAxLTg5ZTQtMDgwMmVjNmU4MGUzXkEyXkFqcGdeQXVyNTY3MDQzNTk@._V1_FMjpg_UX1504_.jpg",
+        "trailer": "https://www.youtube.com/embed/2rPPppw6Bhk",
         "cast": [
             {
                 "name": "Nanoka Hara",
@@ -129,6 +130,7 @@
         "plot": "Beth visita a su hermana mayor, Ella, que está criando a 3 niños en un pequeño apartamento en Los Ángeles. Su reunión es muy corta cuando encuentran un libro demoníaco, The Necronomicon Ex-Mortis.",
         "cover": "https://m.media-amazon.com/images/M/MV5BOTBmMTk5MGMtMDZhMi00YTA3LTk2ZmYtYzdmZTEwNDgzMDFiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1013_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BZDE2OWY5NWEtNmMzNC00NWI1LWEwOTgtMzlhMDlmMzZhZWYyXkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_FMjpg_UX2160_.jpg",
+        "trailer": "https://www.youtube.com/embed/BqQNO7BzN08",
         "cast": [
             {
                 "name": "Lily Sullivan",
@@ -188,6 +190,7 @@
         "plot": "When her family moves from the city to the suburbs, 11-year-old Margaret navigates new friends, feelings, and the beginning of adolescence.",
         "cover": "https://m.media-amazon.com/images/M/MV5BNTBhNmM2ODgtNDI4My00MWM5LWIzYmYtYzQzNWViNzg5MmVlXkEyXkFqcGdeQXVyOTIxNTAyMzU@._V1_FMjpg_UY6000_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BMmZjOGY0YTEtNjNjYS00NzJmLTgxNTgtYjk5MWMwODVkNjQxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX2160_.jpg",
+        "trailer": "https://www.youtube.com/embed/LzRzojHC3iE",
         "cast": [
             {
                 "name": "Abby Ryder Fortson",
@@ -247,6 +250,7 @@
         "plot": "John Wick descubre un camino para derrotar a La Mesa, pero, antes de que pueda ganar su libertad, Wick debe enfrentarse a un nuevo enemigo con poderosas alianzas en todo el mundo y fuerzas que convierten a viejos amigos en enemigos.",
         "cover": "https://m.media-amazon.com/images/M/MV5BOGYxMTI5NTItNGQ3ZC00ZTg0LWI1NmUtMzgzMjdiODQyNTQ0XkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_FMjpg_UY1920_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BNTVhNGFkMDYtOTJmNS00ZGQzLTgzYWItZDgzZTczODE5NmUxXkEyXkFqcGdeQXVyMTEzODQ2NDY4._V1_.jpg",
+        "trailer": "https://www.youtube.com/embed/yjRHZEUamCc",
         "cast": [
             {
                 "name": "Keanu Reeves",
@@ -306,7 +310,54 @@
         "plot": "Un encantador ladrón y un grupo de aventureros poco comunes, emprenden una búsqueda épica para recuperar una reliquia perdida, pero las cosas se complican peligrosamente cuando se encuentran con las personas equivocadas.",
         "cover": "https://m.media-amazon.com/images/M/MV5BZWJhNmVjNzktZTk3Mi00NDQ2LWI0ZWQtYjc2YjIyMWI1MDQ2XkEyXkFqcGdeQXVyMTUzNDkzNDY@._V1_FMjpg_UY2795_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BMzA2ZjY3OTMtYjZiZi00NmFkLTllMjYtYzNhN2M0MjkzOTk1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX2160_.jpg",
-        "cast": []
+        "trailer": "https://www.youtube.com/embed/IiMinixSXII",
+        "cast": [
+            {
+                "name": "Chris Pine",
+                "role": "Edgin",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTM4OTQ4NTU3NV5BMl5BanBnXkFtZTcwNjEwNDU0OQ@@._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Michelle Rodriguez",
+                "role": "Holga",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTkwODIzMzYyMl5BMl5BanBnXkFtZTYwNzAyNjAz._V1_FMjpg_UX450_.jpg"
+            },
+            {
+                "name": "Regé-Jean Page",
+                "role": "Xenk",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMzc3MjM3M2EtYTM2OC00NWJiLTg0NWUtZjdmYzI2ZjJhYTQ4XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UY3600_.jpg"
+            },
+            {
+                "name": "Sophia Lillis",
+                "role": "Doric",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMzc2OWYyZjctMzNjZi00ZmM4LTliZGYtOGMzYWUzNWY3NzdjXkEyXkFqcGdeQXVyMTA1ODAyOTI1._V1_FMjpg_UY5912_.jpg"
+            },
+            {
+                "name": "Justice Smith",
+                "role": "Simon",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNDI4Y2UzZTAtYWVhOS00MDhkLWFhNzAtOGVhNjcwMTM0MjQ2XkEyXkFqcGdeQXVyNTU2NjEwMzY@._V1_FMjpg_UX2160_.jpg"
+            },
+            {
+                "name": "Chloe Coleman",
+                "role": "Kira",
+                "photo": "https://m.media-amazon.com/images/M/MV5BN2NjYTMzNjgtOGUwZC00YTdlLTllNjUtODQyNzAwMmE1ZmU5XkEyXkFqcGdeQXVyODcwNjc1OA@@._V1_FMjpg_UY4762_.jpg"
+            },
+            {
+                "name": "Hugh Grant",
+                "role": "Forge",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTc4MTgxOTk2Ml5BMl5BanBnXkFtZTcwNzMwMjYwMw@@._V1_FMjpg_UX299_.jpg"
+            },
+            {
+                "name": "Daisy Head",
+                "role": "Sofina",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNTE2ZWY1ZTMtNjAxNC00ZjRjLWI5MzgtOTYzYzNhNjU5ZTMzXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_FMjpg_UY3609_.jpg"
+            },
+            {
+                "name": "Jason Wong",
+                "role": "Dralas",
+                "photo": "https://m.media-amazon.com/images/M/MV5BY2M3MzYwMTMtM2QxNi00Yjk1LWFiYTItNTc5MjcxMzFiNjU5XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX824_.jpg"
+            }
+        ]
     },
     {
         "id": 7,
@@ -319,7 +370,54 @@
         "plot": "Tras la repentina muerte de su madre, un hombre apacible, pero angustiado, se enfrenta a sus miedos más oscuros al embarcarse en una odisea épica y kafkiana de vuelta a casa.",
         "cover": "https://m.media-amazon.com/images/M/MV5BY2MwY2NjZWQtNGI1My00MzQxLWEzNDAtMDc3Nzk4MzM1ODk2XkEyXkFqcGdeQXVyMTAwNjEyOTQx._V1_FMjpg_UY2048_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BMDVkNWQzMGMtYzEwYS00MmMyLTliZGEtMmYzYWFkZjQwYWJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX2160_.jpg",
-        "cast": []
+        "trailer": "https://www.youtube.com/embed/XrCg9G_OHAA",
+        "cast": [
+            {
+                "name": "Joaquin Phoenix",
+                "role": "Beau Wassermann",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZGMyY2Q4NTEtMWVkZS00NzcwLTkzNmQtYzBlMWZhZGNhMDhkXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_FMjpg_UX214_.jpg"
+            },
+            {
+                "name": "Armen Nahapetian",
+                "role": "Beau joven",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMGQxNTZkOWUtN2U3ZC00OWExLTg4YTMtYWZkOThiYzUwODlkXkEyXkFqcGdeQXVyODcyNzQ0ODg@._V1_FMjpg_UX2160_.jpg"
+            },
+            {
+                "name": "Patti LuPone",
+                "role": "Mona Wassermann",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNWNiNmUyMjctODMxZi00ZjRiLTljZjktNDY5NzQ1MmE3Njg5XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UY4000_.jpg"
+            },
+            {
+                "name": "Amy Ryan",
+                "role": "Grace",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTY0MTcwMzM0Nl5BMl5BanBnXkFtZTcwODIyMjM3NA@@._V1_FMjpg_UY1976_.jpg"
+            },
+            {
+                "name": "Nathan Lane",
+                "role": "Roger",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTEwMTc1MjQ3NzFeQTJeQWpwZ15BbWU3MDEzNjEwODE@._V1_FMjpg_UX266_.jpg"
+            },
+            {
+                "name": "Kylie Rogers",
+                "role": "Toni",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNTFjMTA4OGUtOWE4Mi00OTI1LWI5MjUtMTBkNTAyZjM0MjRmXkEyXkFqcGdeQXVyMjg1ODM0MzA@._V1_FMjpg_UY1907_.jpg"
+            },
+            {
+                "name": "Denis Ménochet",
+                "role": "Jeeves",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMmE4MjFkNTItYWUxOC00MGMwLTk4NmItYWRjMWEyNThkNDVlXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_FMjpg_UX1505_.jpg"
+            },
+            {
+                "name": "Parker Posey",
+                "role": "Elaine Bray",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMGZhZWMzYTYtNTRiZS00NzkwLWEyZGItODAxNjQwM2ZlNmUxXkEyXkFqcGdeQXVyMTExNzQ3MzAw._V1_FMjpg_UX360_.jpg"
+            },
+            {
+                "name": "Stephen McKinley Henderson",
+                "role": "Terapista",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTY0NDY2MDQzMl5BMl5BanBnXkFtZTYwMzI1NTQ3._V1_FMjpg_UX435_.jpg"
+            }
+        ]
     },
     {
         "id": 8,
@@ -332,7 +430,54 @@
         "plot": "Basado en los archivos reales del padre Gabriele Amorth, el principal exorcista del Papa, quien mientras investiga la posesión de un joven, descubre que durante siglos en el Vaticano han intentado a toda costa mantener oculta la verdad.",
         "cover": "https://m.media-amazon.com/images/M/MV5BYjA0MGU4MzYtYTYxMy00MjRhLTlmMDYtZTVhZDc1Y2QwNWY2XkEyXkFqcGdeQXVyMjY5ODI4NDk@._V1_FMjpg_UX1012_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BMTIzMWNlZDktY2YzMy00MWQyLThlM2ItZGI3YzdhZGFmZThjXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_FMjpg_UX1169_.jpg",
-        "cast": []
+        "trailer": "https://www.youtube.com/embed/YJXqvnT_rsk",
+        "cast": [
+            {
+                "name": "Russell Crowe",
+                "role": "Padre Gabriel Amorth",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTQyMTExNTMxOF5BMl5BanBnXkFtZTcwNDg1NzkzNw@@._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Daniel Zovatto",
+                "role": "Padre Esquibel",
+                "photo": "https://m.media-amazon.com/images/M/MV5BYzc4ZWMwNTgtNDJmNC00ZDJjLWJlMzgtY2UzMDI5YTkwMTMzXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UY5184_.jpg"
+            },
+            {
+                "name": "Alex Essoe",
+                "role": "Julia",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMjM4ZjQ1MjMtNGM2Ny00YzdjLThlY2QtMzZkNTRlYTBiMWU5XkEyXkFqcGdeQXVyMjM3NDYzMzY@._V1_FMjpg_UX776_.jpg"
+            },
+            {
+                "name": "Franco Nero",
+                "role": "El Papa",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNTlkNzIwMDctMjEzMi00NGM2LTk1NTAtYjQyNmUwZjljMWE2XkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_FMjpg_UX738_.jpg"
+            },
+            {
+                "name": "Peter DeSouza-Feighoney",
+                "role": "Henry",
+                "photo": "https://m.media-amazon.com/images/M/MV5BYzhlMzdkMTgtNjg2OC00M2RkLWIxZDItZjVkNDU5M2ZlYjZjXkEyXkFqcGdeQXVyMTU1OTU4MjM0._V1_FMjpg_UX546_.jpg"
+            },
+            {
+                "name": "Laurel Marsden",
+                "role": "Amy",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNDU1ZGJlYzYtNDBhNC00M2I1LWExMzItNGZhMmVmNzMxMTM2XkEyXkFqcGdeQXVyMTExMjEyMTUz._V1_FMjpg_UX1200_.jpg"
+            },
+            {
+                "name": "Cornell John",
+                "role": "Obispo Lumumba",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNjNmNDQzZjktMzE0NC00MzI3LThlMzItZmRhNWJkMjRjYzI2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX984_.jpg"
+            },
+            {
+                "name": "Ryan O'Grady",
+                "role": "Cardenal Sullivan",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMDc3ZDBjMDAtYzlmZC00M2M0LWIyZDgtMzJhYTU2YmU2Mjk1XkEyXkFqcGdeQXVyODU1OTkzMTA@._V1_FMjpg_UX1080_.jpg"
+            },
+            {
+                "name": "Ralph Ineson",
+                "role": "Asmodeus (voz)",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNjc1YWU0ODktYTNlYy00YmZmLWI5ZTgtMWU3MGNmMWU5N2E1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1200_.jpg"
+            }
+        ]
     },
     {
         "id": 9,
@@ -345,7 +490,54 @@
         "plot": "Todavía conmocionado por la pérdida de Gamora, Peter Quill reúne a su equipo para defender el universo y a uno de los suyos, una misión que podría significar el fin de los Guardianes si no tienen éxito.",
         "cover": "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX886_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BZDUzNDljZjctMzJmZC00MTc2LWJkNDUtNzVkNTczNjNiNjFlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX2160_.jpg",
-        "cast": []
+        "trailer": "https://www.youtube.com/embed/u3V5KDHRQvk",
+        "cast": [
+            {
+                "name": "Chris Pratt",
+                "role": "Peter Quill / Star-Lord",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZjdkYjg1NzMtOTY2YS00ZWI1LWEwZWYtOTU1YTM2ODA2ZWY5XkEyXkFqcGdeQXVyMTM1MjAxMDc3._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Zoe Saldana",
+                "role": "Gamora",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMGNhNzdlMTAtZGE2NS00MmU5LWIzNmYtMjVlNThiNmU1ZWY4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY2519_.jpg"
+            },
+            {
+                "name": "Dave Bautista",
+                "role": "Drax",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNTZkYzU0ZGUtZTk1MC00MzJjLWFmMzItY2M0ODY1ZmI2OGQ0XkEyXkFqcGdeQXVyMjI0MjgwNjc@._V1_FMjpg_UX1000_.jpg"
+            },
+            {
+                "name": "Karen Gillan",
+                "role": "Nebula",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTQwMDQ0NDk1OV5BMl5BanBnXkFtZTcwNDcxOTExNg@@._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Pom Klementieff",
+                "role": "Mantis",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTkzNjE5MzY5M15BMl5BanBnXkFtZTgwMDI5ODMxODE@._V1_FMjpg_UX1024_.jpg"
+            },
+            {
+                "name": "Vin Diesel",
+                "role": "Groot (voz)",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMjExNzA4MDYxN15BMl5BanBnXkFtZTcwOTI1MDAxOQ@@._V1_FMjpg_UY2048_.jpg"
+            },
+            {
+                "name": "Bradley Cooper",
+                "role": "Rocket (voz)",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMjM0OTIyMzY1M15BMl5BanBnXkFtZTgwMTg0OTE0NzE@._V1_FMjpg_UY3600_.jpg"
+            },
+            {
+                "name": "Chukwudi Iwuji",
+                "role": "El Alto Evolucionador",
+                "photo": "https://m.media-amazon.com/images/M/MV5BZTBlZWZlYmYtMTEzZi00OTU5LWEzYWQtYjJjZjBmZWJkOTUxXkEyXkFqcGdeQXVyMTk4NTI2NTI@._V1_FMjpg_UX825_.jpg"
+            },
+            {
+                "name": "Will Poulter",
+                "role": "Adam Warlock",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNGM5Y2IxNmYtODg5Zi00YjZhLThkZDUtMGE1ODc4N2MyZjAzXkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_FMjpg_UX527_.jpg"
+            }
+        ]
     },
     {
         "id": 10,
@@ -358,6 +550,53 @@
         "plot": "El adolescente Billy Batson, que al recitar la palabra mágica '¡SHAZAM!' se transforma en su alter ego de superhéroe adulto, Shazam.",
         "cover": "https://m.media-amazon.com/images/M/MV5BMDU0YWIwYjEtYzUwZS00MjFiLWFlZDItNTNiN2U4YTA0MGU5XkEyXkFqcGdeQXVyMTUzMTQ0NzQz._V1_FMjpg_UX690_.jpg",
         "banner": "https://m.media-amazon.com/images/M/MV5BZGFlYjkyNzItOWQ4YS00MmQyLWI4ODQtMjAxZjFiODI4OWExXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX2160_.jpg",
-        "cast": []
+        "trailer": "https://www.youtube.com/embed/AIc671o9yCI",
+        "cast": [
+            {
+                "name": "Zachary Levi",
+                "role": "Shazam",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNDU1N2YzNGYtOTU5Yy00NmE0LTkxMzUtZTNjN2I5ZGE3YTY4XkEyXkFqcGdeQXVyMTExNzQ3MzAw._V1_FMjpg_UX936_.jpg"
+            },
+            {
+                "name": "Asher Angel",
+                "role": "Billy Batson",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNzhlMDc2NDMtMmM4MC00NWFiLTg2ZTgtMDg3MWNmNmZkOWUwXkEyXkFqcGdeQXVyNDc2MTMxOTY@._V1_FMjpg_UX1242_.jpg"
+            },
+            {
+                "name": "Jack Dylan Grazer",
+                "role": "Freddy Freeman",
+                "photo": "https://m.media-amazon.com/images/M/MV5BYjQzYmE5OGItM2UzOC00YmViLTk4OGUtNzNjOGYyMTg0Y2FlXkEyXkFqcGdeQXVyOTg2NzI4Nw@@._V1_FMjpg_UY2016_.jpg"
+            },
+            {
+                "name": "Rachel Zegler",
+                "role": "Anthea",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMjQyNzg3MDQ2OF5BMl5BanBnXkFtZTgwMDAzNjcxNzM@._V1_FMjpg_UX400_.jpg"
+            },
+            {
+                "name": "Ross Butler",
+                "role": "Superheroe Eugene",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMDQ1YzFjZDYtNTkzZi00MWE5LThmNGYtY2JmZWZjYzI3NzFhXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_FMjpg_UX960_.jpg"
+            },
+            {
+                "name": "D.J. Cotrona",
+                "role": "Superheroe Pedro",
+                "photo": "https://m.media-amazon.com/images/M/MV5BNjVmOTU3MWItNGQwMC00MjdiLTk5NzQtM2E5OGRkOWVkODc3XkEyXkFqcGdeQXVyMjk3NTUyOTc@._V1_FMjpg_UX502_.jpg"
+            },
+            {
+                "name": "Grace Fulton",
+                "role": "Mary Bromfield / Superheroe Mary",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMGMwOThiYWItZjRhYy00ODJkLWJkMGEtZmQzYzFhMmUzNzE2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UY3500_.jpg"
+            },
+            {
+                "name": "Meagan Good",
+                "role": "Superheroe Darla",
+                "photo": "https://m.media-amazon.com/images/M/MV5BMTU3NGQwYjUtMmMxYS00OGU5LTgzYzUtMDk3MjFmYWVkZmNiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UY3600_.jpg"
+            },
+            {
+                "name": "Lucy Liu",
+                "role": "Kalypso",
+                "photo": "https://m.media-amazon.com/images/M/MV5BOTgxODE0MjI5Ml5BMl5BanBnXkFtZTcwMjkxMzMzMg@@._V1_FMjpg_UX282_.jpg"
+            }
+        ]
     }
 ]

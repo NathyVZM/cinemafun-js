@@ -27,8 +27,27 @@ export const renderClasification = clasification => {
 }
 
 export const openMovieTrailer = trailer => {
-    console.log(trailer)
     const iframe = document.querySelector('iframe')
     iframe.src = trailer
-    iframe.setAttribute('watch', true)
+
+    const dialog = document.querySelector('#trailer-dialog')
+    dialog.open = true
+}
+
+export const closeMovieTrailer = () => {
+    const iframe = document.querySelector('iframe')
+    iframe.src = ''
+
+    const dialog = document.querySelector('#trailer-dialog')
+    dialog.open = false
+}
+
+export const goToTop = () => {
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+export const cleanFilename = filename => {
+    const cleanedFilename = filename.replace(/[^\w]/g, '_');
+    return cleanedFilename;
 }

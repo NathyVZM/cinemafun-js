@@ -1,7 +1,15 @@
 import movies from '../../movies.json' assert { type: 'json' }
 import { renderStars, renderClasification } from './miscellaneous.js'
 
+export const toggleNavbar = () => {
+    const navbar = document.querySelector('#header > aside')
+    navbar.classList.toggle('show-navbar');
+}
+
 export const goToHome = () => {
+    const navbar = document.querySelector('#header > aside')
+    navbar.classList.remove('show-navbar');
+
     const slides = movies.toSorted(() => Math.random() - 0.5).slice(0, 3)
     const previews = movies.toSorted(() => Math.random() - 0.5).slice(0, 5)
 
@@ -16,12 +24,12 @@ export const goToHome = () => {
                         <div class="carousel-item${index === 0 ? ' active' : ''}">
                             <img src="${movie.banner}"
                                 class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-flex">
+                            <div class="carousel-caption">
                                 <img src="${movie.cover}" alt="${movie.title}">
                                 <div>
                                     <h2>${movie.title}</h2>
                                     <h3>${movie.originalTitle || ''}</h3>
-                                    <button class="button">
+                                    <button class="button" onclick="openMovieTrailer('${movie.trailer}')">
                                         Mira el trailer
                                         <i class="ph-duotone ph-play-circle"></i>
                                     </button>
@@ -59,10 +67,14 @@ export const goToHome = () => {
         </section>
     `
 
-    window.scrollTo(0,0)
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth'})
 }
 
 export const goToMovies = () => {
+    const navbar = document.querySelector('#header > aside')
+    navbar.classList.remove('show-navbar');
+    
     const main = document.querySelector('#main')
     main.removeAttribute('page')
     main.innerHTML = `
@@ -87,10 +99,14 @@ export const goToMovies = () => {
         </section>
     `
 
-    window.scrollTo(0,0)
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth'})
 }
 
 export const searchMovies = () => {
+    const navbar = document.querySelector('#header > aside')
+    navbar.classList.remove('show-navbar');
+
     const search = document.querySelector('#header #search').value
 
     const regex = new RegExp(search, 'i')
@@ -119,4 +135,7 @@ export const searchMovies = () => {
             }).join('')}
         </section>
     `
+
+    if (window.location.hash) history.replaceState(null, null, window.location.pathname);
+    window.scrollTo({ top: 0, behavior: 'smooth'})
 }

@@ -1,51 +1,4 @@
-#main[page="invoice"] {
-    align-items: center;
-}
-
-#main[page="invoice"] > main {
-    width: 100%;
-}
-
-#invoice-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-}
-
-#invoice-header > div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 1vmax;
-}
-
-#invoice-header h2 {
-    font-size: 2em;
-}
-
-#invoice-header > div > i {
-    font-size: 2vmax;
-    color: var(--primary);
-}
-
-#invoice-header > button {
-    width: 13em;
-    height: 3em;
-}
-
-#invoice-header > button > i {
-    font-size: 1.3em;
-}
-
-#mobile-btn {
-    display: none;
-}
-
 #invoice {
-    margin: auto;
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -188,47 +141,4 @@
     align-items: center;
     flex-flow: row wrap;
     color: var(--background);
-}
-
-@media screen and (orientation: portrait) {
-    #main[page="invoice"] {
-        align-items: center;
-    }
-
-    #main[page="invoice"] > main {
-        overflow-x: auto;
-    }
-
-    #invoice-header > div {
-        flex: 1;
-    }
-    
-    #invoice-header h2 {
-        font-size: 1.2em;
-    }
-    
-    #invoice-header > div > i {
-        font-size: 1.5em;
-    }
-    
-    #invoice-header > button {
-        width: 3em;
-        height: 3em;
-    }
-    
-    #invoice-header > button > i {
-        font-size: 1.3em;
-    }
-
-    #mobile-btn {
-        display: flex;
-    }
-
-    #desktop-btn {
-        display: none;
-    }
-
-    #invoice {
-        width: 200vw;
-    }
 }

@@ -2,14 +2,56 @@ import movies from '../../movies.json' assert { type: 'json' }
 import { renderStars, renderClasification } from './miscellaneous.js'
 
 export const renderHeader = () => {
+    const user = JSON.parse(sessionStorage.getItem('user'))
     const script = document.querySelector('body script')
     script.insertAdjacentHTML('beforebegin', `
         <!-- header -->
        <header id="header">
             <div>
-                <i class="ph-duotone ph-film-slate"></i>
-                <h1 class="logo">CINEMAFUN</h1>
+                <div>
+                    <i class="ph-duotone ph-film-slate"></i>
+                    <h1 class="logo">CINEMAFUN</h1>
+                </div>
+
+                <button id="toggleNavbarButton" onclick="toggleNavbar()" class="button">
+                    <i class="ph ph-list"></i>
+                </button>
             </div>
+
+            <aside>
+                <section class="info-panel">
+                    <div id="first">
+                        <i class="ph-duotone ph-user"></i>
+                        <div>
+                            <p>${user?.name}</p>
+                            <p>${user?.email}</p>
+                        </div>
+                    </div>
+                    <div id="second">
+                        <div>
+                            <p>Monto del boleto</p>
+                            <p>
+                                <i class="ph-duotone ph-ticket"></i>
+                                <span>${user?.ticket}</span> USD
+                            </p>
+                        </div>
+                        <div>
+                            <button type="button" class="button" onclick="showDialog()"><i class="ph-duotone ph-pencil-simple"></i></button>
+                        </div>
+                    </div>
+                </section>
+                <ul>
+                    <li onclick="goToHome()">
+                        <i class="ph-duotone ph-house"></i>
+                        <span>Inicio</span>
+                    </li>
+                    <li onclick="goToMovies()">
+                        <i class="ph-duotone ph-film-reel"></i>
+                        <span>Películas</span>
+                    </li>
+                </ul>
+            </aside>
+            
             <div class="form-input">
                 <i class="ph-duotone ph-magnifying-glass"></i>
                 <input type="search" name="search" id="search" placeholder="Busca películas por su título o género..." oninput="searchMovies()">
@@ -70,16 +112,16 @@ export const renderCarousel = () => {
                 <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         ${slides.map((movie, index) => {
-                            return `
+        return `
                             <div class="carousel-item${index === 0 ? ' active' : ''}">
                                 <img src="${movie.banner}"
                                     class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-flex">
+                                <div class="carousel-caption d-flex">
                                     <img src="${movie.cover}" alt="${movie.title}">
                                     <div>
                                         <h2>${movie.title}</h2>
                                         <h3>${movie.originalTitle || ''}</h3>
-                                        <button class="button" onclick="openMovieTrailer('${movie?.trailer}')">
+                                        <button class="button" onclick="openMovieTrailer('${movie.trailer}')">
                                             Mira el trailer
                                             <i class="ph-duotone ph-play-circle"></i>
                                         </button>
@@ -87,7 +129,7 @@ export const renderCarousel = () => {
                                 </div>
                             </div>
                             `
-                        }).join('')}
+    }).join('')}
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -110,7 +152,7 @@ export const renderMoviesPreviews = () => {
     main.innerHTML += `
         <section>
             ${previews.map(movie => {
-                return `
+        return `
                     <figure class="movie" onclick="renderMovieDetails(${movie.id})">
                         <img src="${movie.cover}" alt="${movie.title}">
                         <section>
@@ -121,7 +163,7 @@ export const renderMoviesPreviews = () => {
                         </section>
                     </figure>
                 `
-            }).join('')}
+    }).join('')}
         </section>
     `
 }
